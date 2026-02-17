@@ -1,0 +1,126 @@
+| Cod | Formula (din mesajul validării) | Tip |
+|---|---|---|
+| 67-001 | Daca CFP nu este egal cu 24, 26, 28 entitatea nu completeaza capitol I | ERROR |
+| 67-002 | In Rind @row Tara @country poate fi reflectate doar coduri tarilor care sunt in Rind 010.* | ERROR |
+| 67-003 | Rind 010 col.@col = Rind 010-01 +..+ 010-07 col.@col. | ERROR |
+| 67-004 | Rind 020 col.@col = Rind 020-01 +..+ 020-07 col.@col. | ERROR |
+| 67-005 | Rind 030 col.@col = Rind 030-01 +..+ 030-07 col.@col. | ERROR |
+| 67-006 | Rind 040 col.@col = Rind 040-01 +..+ 040-07 col.@col. | ERROR |
+| 67-007 | Rind 050 col.@col = Rind 050-01 +..+ 050-07 col.@col. | ERROR |
+| 67-008 | Rind 060 col.@col = Rind 060-01 +..+ 060-07 col.@col. | ERROR |
+| 67-009 | Rind 070 col.@col = Rind 070-01 +..+ 070-07 col.@col. | ERROR |
+| 67-010 | Rind 080 col.@col = Rind 080-01 +..+ 080-07 col.@col. | ERROR |
+| 67-011 | Rind 090 col.@col = Rind 090-01 +..+ 090-07 col.@col. | ERROR |
+| 67-015 | Nu exista date In Rind @row | ERROR |
+| 67-016 | Rind 040, col.@col. Tara @country >= Rind 080 + Rind 090 \\| Rind 040, col.@col. Tara @country >= Rind 090 | ERROR |
+| 67-020 | Daca CFP nu este egal cu 24, 26, 28 entitatea nu completeaza capitol II | ERROR |
+| 67-024 | Rind 130 col.@col = Rind 130-01 +..+ 130-07 col.@col. | ERROR |
+| 67-025 | Rind 140 col.@col = Rind 140-01 +..+ 140-07 col.@col. | ERROR |
+| 67-030 | Rind 500 col.@col = Rind. 500-978 +..+ 500-999 col.@col. | ERROR |
+| 67-031 | Rind 501 col.@col = Rind. 501-978 +..+ 501-999 col.@col. | ERROR |
+| 67-033 | Rind 511 col.@col = Rind. 511-978 +..+ 511-999 col.@col. | ERROR |
+| 67-034 | Rind 520 col.@col = Rind. 520-978 +..+ 520-999 col.@col. | ERROR |
+| 67-035 | Rind 521 col.@col = Rind. 521-978 +..+ 521-999 col.@col. | ERROR |
+| 67-036 | Rind 530 col.@col = Rind. 530-978 +..+ 530-999 col.@col. | ERROR |
+| 67-037 | Rind 531 col.@col = Rind. 531-978 +..+ 531-999 col.@col. | ERROR |
+| 67-038 | Rind 540 col.@col = Rind. 540-978 +..+ 540-999 col.@col. | ERROR |
+| 67-039 | Rind 541 col.@col = Rind. 541-978 +..+ 541-999 col.@col. | ERROR |
+| 67-040 | Rind 550 col.@col = Rind. 550-978 +..+ 550-999 col.@col. | ERROR |
+| 67-041 | Rind 551 col.@col = Rind. 551-978 +..+ 551-999 col.@col. | ERROR |
+| 67-042 | Rind 560 col.@col = Rind. 560-978 +..+ 560-999 col.@col. | ERROR |
+| 67-043 | Rind 561 col.@col = Rind. 561-978 +..+ 561-999 col.@col. | ERROR |
+| 67-044 | Rind 570 col.@col = Rind. 570-978 +..+ 570-999 col.@col. | ERROR |
+| 67-045 | Rind 571 col.@col = Rind. 571-978 +..+ 571-999 col.@col. | ERROR |
+| 67-046 | Rind 580 col.@col = Rind. 580-978 +..+ 580-999 col.@col. | ERROR |
+| 67-047 | Rind 581 col.@col = Rind. 581-978 +..+ 581-999 col.@col. | ERROR |
+| 67-048 | Rind 590 col.@col = Rind. 590-978 +..+ 590-999 col.@col. | ERROR |
+| 67-049 | Rind 591 col.@col = Rind. 591-978 +..+ 591-999 col.@col. | ERROR |
+| 67-050 | Rind 600 col.@col = Rind. 600-978 +..+ 600-999 col.@col. | ERROR |
+| 67-051 | Rind 601 col.@col = Rind. 601-978 +..+ 601-999 col.@col. | ERROR |
+| 67-052 | Rind 500 col.@col = Rind. 510 + Rind. 520 + Rind. 530 + Rind. 540 + Rind. 550 col.@col. | ERROR |
+| 67-053 | Rind 501 col.@col = Rind. 511 + Rind. 521 + Rind. 531 + Rind. 541 + Rind. 551 col.@col. | ERROR |
+| 67-054 | Rind 560 col.@col = Rind. 570 + Rind. 580 + Rind. 590 + Rind. 600 col.@col. | ERROR |
+| 67-055 | Rind 561 col.@col = Rind. 571 + Rind. 581 + Rind. 591 + Rind. 601 col.@col. | ERROR |
+| 67-056 | Rind. 500 col.1 >= Rind 501 col.1 \\| Rind. 500 col.2 >= Rind 501 col.2 \\| Rind. 500 col.3 >= Rind 501 col.3 \\| (+1 variante) | ERROR |
+| 67-057 | Rind. 510 col.1 >= Rind 511 col.1 \\| Rind. 510 col.2 >= Rind 511 col.2 \\| Rind. 510 col.3 >= Rind 511 col.3 \\| (+1 variante) | ERROR |
+| 67-058 | Rind. 520 col.1 >= Rind 521 col.1 \\| Rind. 520 col.2 >= Rind 521 col.2 \\| Rind. 520 col.3 >= Rind 521 col.3 \\| (+1 variante) | ERROR |
+| 67-059 | Rind. 530 col.1 >= Rind 531 col.1 \\| Rind. 530 col.2 >= Rind 531 col.2 \\| Rind. 530 col.3 >= Rind 531 col.3 \\| (+1 variante) | ERROR |
+| 67-060 | Rind. 540 col.1 >= Rind 541 col.1 \\| Rind. 540 col.2 >= Rind 541 col.2 \\| Rind. 540 col.3 >= Rind 541 col.3 \\| (+5 variante) | ERROR |
+| 67-061 | Rind. 560 col.1 >= Rind 561 col.1 \\| Rind. 560 col.2 >= Rind 561 col.2 \\| Rind. 560 col.3 >= Rind 561 col.3 \\| (+1 variante) | ERROR |
+| 67-062 | Rind. 570 col.1 >= Rind 571 col.1 \\| Rind. 570 col.2 >= Rind 571 col.2 \\| Rind. 570 col.3 >= Rind 571 col.3 \\| (+1 variante) | ERROR |
+| 67-063 | Rind. 580 col.1 >= Rind 581 col.1 \\| Rind. 580 col.2 >= Rind 581 col.2 \\| Rind. 580 col.3 >= Rind 581 col.3 \\| (+1 variante) | ERROR |
+| 67-064 | Rind. 590 col.1 >= Rind 591 col.1 \\| Rind. 590 col.2 >= Rind 591 col.2 \\| Rind. 590 col.3 >= Rind 591 col.3 \\| (+1 variante) | ERROR |
+| 67-065 | Rind. 600 col.1 >= Rind 601 col.1 \\| Rind. 600 col.2 >= Rind 601 col.2 \\| Rind. 600 col.3 >= Rind 601 col.3 \\| (+1 variante) | ERROR |
+| 67-068 | Rind @row col.5 = Rind. @row col.1 + col.2 - col.3 + col.4 | ERROR |
+| 67-069 | Nu exista date in cap 5, 6 | WARNING |
+| 67-070 | Rind 700 col.@col = Rind. 700-978 +..+ 700-999 col.@col. | ERROR |
+| 67-071 | Rind 701 col.@col = Rind. 701-978 +..+ 701-999 col.@col. | ERROR |
+| 67-072 | Rind 710 col.@col = Rind. 710-978 +..+ 710-999 col.@col. | ERROR |
+| 67-073 | Rind 711 col.@col = Rind. 711-978 +..+ 711-999 col.@col. | ERROR |
+| 67-074 | Rind 720 col.@col = Rind. 720-978 +..+ 720-999 col.@col. | ERROR |
+| 67-075 | Rind 721 col.@col = Rind. 721-978 +..+ 721-999 col.@col. | ERROR |
+| 67-076 | Rind 730 col.@col = Rind. 730-978 +..+ 730-999 col.@col. | ERROR |
+| 67-077 | Rind 731 col.@col = Rind. 731-978 +..+ 731-999 col.@col. | ERROR |
+| 67-078 | Rind 740 col.@col = Rind. 740-978 +..+ 740-999 col.@col. | ERROR |
+| 67-079 | Rind 741 col.@col = Rind. 741-978 +..+ 741-999 col.@col. | ERROR |
+| 67-080 | Rind 750 col.@col = Rind. 750-978 +..+ 750-999 col.@col. | ERROR |
+| 67-081 | Rind 751 col.@col = Rind. 751-978 +..+ 751-999 col.@col. | ERROR |
+| 67-082 | Rind 760 col.@col = Rind. 760-978 +..+ 760-999 col.@col. | ERROR |
+| 67-083 | Rind 761 col.@col = Rind. 761-978 +..+ 761-999 col.@col. | ERROR |
+| 67-084 | Rind 770 col.@col = Rind. 770-978 +..+ 770-999 col.@col. | ERROR |
+| 67-085 | Rind 771 col.@col = Rind. 771-978 +..+ 771-999 col.@col. | ERROR |
+| 67-086 | Rind 780 col.@col = Rind. 780-978 +..+ 780-999 col.@col. | ERROR |
+| 67-087 | Rind 781 col.@col = Rind. 781-978 +..+ 781-999 col.@col. | ERROR |
+| 67-088 | Rind 790 col.@col = Rind. 790-978 +..+ 790-999 col.@col. | ERROR |
+| 67-089 | Rind 791 col.@col = Rind. 791-978 +..+ 791-999 col.@col. | ERROR |
+| 67-090 | Rind 800 col.@col = Rind. 800-978 +..+ 800-999 col.@col. | ERROR |
+| 67-091 | Rind 801 col.@col = Rind. 801-978 +..+ 801-999 col.@col. | ERROR |
+| 67-092 | Rind 700 col.@col = Rind. 710 + Rind. 720 + Rind. 730 + Rind. 740 + Rind. 750 col.@col. | ERROR |
+| 67-093 | Rind 701 col.@col = Rind. 711 + Rind. 721 + Rind. 731 + Rind. 741 + Rind. 751 col.@col. | ERROR |
+| 67-094 | Rind 760 col.@col = Rind. 770 + Rind. 780 + Rind. 790 + Rind. 800 col.@col. | ERROR |
+| 67-095 | Rind 761 col.@col = Rind. 771 + Rind. 781 + Rind. 791 + Rind. 801 col.@col. | ERROR |
+| 67-096 | Col.3 >= Col.4 | ERROR |
+| 67-097 | (Col.7 + Col.8) = (Col.1 + Col.2 + Col.3 – Col.5 + Col.6) | ERROR |
+| 67-098 | Rind. 700 col.1 >= Rind 701 col.1 \\| Rind. 700 col.2 >= Rind 701 col.2 \\| Rind. 700 col.3 >= Rind 701 col.3 \\| (+4 variante) | ERROR |
+| 67-099 | Rind. 710 col.1 >= Rind 711 col.1 \\| Rind. 710 col.2 >= Rind 711 col.2 \\| Rind. 710 col.3 >= Rind 711 col.3 \\| (+4 variante) | ERROR |
+| 67-100 | Rind. 720 col.1 >= Rind 721 col.1 \\| Rind. 720 col.2 >= Rind 721 col.2 \\| Rind. 720 col.3 >= Rind 721 col.3 \\| (+4 variante) | ERROR |
+| 67-101 | Rind. 730 col.1 >= Rind 731 col.1 \\| Rind. 730 col.2 >= Rind 731 col.2 \\| Rind. 730 col.3 >= Rind 731 col.3 \\| (+4 variante) | ERROR |
+| 67-102 | Rind. 740 col.1 >= Rind 741 col.1 \\| Rind. 740 col.2 >= Rind 741 col.2 \\| Rind. 740 col.3 >= Rind 741 col.3 \\| (+4 variante) | ERROR |
+| 67-103 | Rind. 750 col.1 >= Rind 751 col.1 \\| Rind. 750 col.2 >= Rind 751 col.2 \\| Rind. 750 col.3 >= Rind 751 col.3 \\| (+4 variante) | ERROR |
+| 67-104 | Rind. 760 col.1 >= Rind 761 col.1 \\| Rind. 760 col.2 >= Rind 761 col.2 \\| Rind. 760 col.3 >= Rind 761 col.3 \\| (+4 variante) | ERROR |
+| 67-105 | Rind. 770 col.1 >= Rind 771 col.1 \\| Rind. 770 col.2 >= Rind 771 col.2 \\| Rind. 770 col.3 >= Rind 771 col.3 \\| (+4 variante) | ERROR |
+| 67-106 | Rind. 780 col.1 >= Rind 781 col.1 \\| Rind. 780 col.2 >= Rind 781 col.2 \\| Rind. 780 col.3 >= Rind 781 col.3 \\| (+4 variante) | ERROR |
+| 67-107 | Rind. 790 col.1 >= Rind 791 col.1 \\| Rind. 790 col.2 >= Rind 791 col.2 \\| Rind. 790 col.3 >= Rind 791 col.3 \\| (+4 variante) | ERROR |
+| 67-108 | Rind. 800 col.1 >= Rind 801 col.1 \\| Rind. 800 col.2 >= Rind 801 col.2 \\| Rind. 800 col.3 >= Rind 801 col.3 \\| (+4 variante) | ERROR |
+| 67-120 | CapI.(Rind.020Col.1+Rind.090Col.1)=CapV.Rind.591Col.1+CapVI.(Rind.791Col.1+Rind.791Col.2) | ERROR |
+| 67-121 | CapI.(Rind.020Col.2+Rind.090Col.2)=CapV.Rind.591Col.2+CapVI.Rind.791Col.3 | ERROR |
+| 67-122 | CapI.(Rind.020Col.3+Rind.090Col.3)=CapV.Rind.591Col.3+CapVI.Rind.791Col.5 | ERROR |
+| 67-123 | CapI.(Rind.020Col.4+Rind.090Col.4)=CapV.Rind.591Col.4+CapVI.Rind.791Col.6 | ERROR |
+| 67-124 | CapI.(Rind.020Col.6+Rind.090Col.6)=CapV.Rind.591Col.5+CapVI.(Rind.791Col.7+Rind.791Col.8) | ERROR |
+| 67-125 | CapI.Rind.030 Col.1= CapV.(Rind.571Col.1+Rind.581Col.1)+CapVI.(Rind.771Col.1+Rind.781Col.1+Rind.771Col.2+Rind.781Col.2) | ERROR |
+| 67-126 | CapI.Rind.030 Col.2=CapV.(Rind.571Col.2+Rind.581Col.2)+CapVI.(Rind.771Col.3+Rind.781Col.3) | ERROR |
+| 67-127 | CapI.Rind.030 Col.3=CapV.(Rind.571Col.3+Rind.581Col.3)+CapVI.(Rind.771Col.5+Rind.781Col.5) | ERROR |
+| 67-128 | CapI.Rind.030 Col.4=CapV.(Rind.571Col.4+Rind.581Col.4)+CapVI.(Rind.771Col.6+Rind.781Col.6) | ERROR |
+| 67-129 | CapI.Rind.030 Col.6=CapV.(Rind.571Col.5+Rind.581Col.5)+CapVI.(Rind.771Col.7+Rind.781Col.7+ Rind.771Col.8+Rind.781Col.8) | ERROR |
+| 67-130 | CapI.(Rind.040Col.1-Rind.090Col.1)=CapV.Rind.601Col.1+CapVI.(Rind.801Col.1+Rind.801Col.2) | ERROR |
+| 67-131 | CapI.(Rind.040Col.2-Rind.090Col.2)=CapV.Rind.601Col.2+CapVI.Rind.801Col.3 | ERROR |
+| 67-132 | CapI.(Rind.040Col.3-Rind.090Col.3)=CapV.Rind.601Col.3+CapVI.Rind.801Col.5 | ERROR |
+| 67-133 | CapI.(Rind.040Col.4-Rind.090Col.4)= CapV.Rind.601Col.4+CapVI.Rind.801Col.6 | ERROR |
+| 67-134 | CapI.(Rind.040Col.6-Rind.090Col.6)=CapV.Rind.601Col.5+CapVI.(Rind.801Col.7+Rind.801Col.8) | ERROR |
+| 67-135 | CapI.Rind.050Col.1=CapV.Rind.531Col.1+CapVI.(Rind.731Col.1+Rind.731Col.2) | ERROR |
+| 67-136 | CapI.Rind.050Col.2=CapV.Rind.531Col.2+CapVI.Rind.731Col.3 | ERROR |
+| 67-137 | CapI.Rind.050Col.3=CapV.Rind.531Col.3+ CapVI.Rind.731Col.5 | ERROR |
+| 67-138 | CapI.Rind.050Col.4=CapV.Rind.531Col.4+CapVI.Rind.731Col.6 | ERROR |
+| 67-139 | CapI.Rind.050Col.6=CapV.Rind.531Col.5+CapVI.(Rind.731Col.7+Rind.731Col.8) | ERROR |
+| 67-140 | CapI.Rind.060Col.1=CapV.(Rind.511Col.1+Rind.521Col.1)+CapVI.(Rind.711Col.1+Rind.721Col.1+Rind.711Col.2+Rind.721Col.2) | ERROR |
+| 67-141 | CapI.Rind.060Col.2=CapV.(Rind.511Col.2+Rind.521Col.2)+CapVI.(Rind.711Col.3+Rind.721Col.3) | ERROR |
+| 67-142 | CapI.Rind.060Col.3= CapV.(Rind.511Col.3+Rind.521Col.3)+CapVI.(Rind.711Col.5+Rind.721Col.5) | ERROR |
+| 67-143 | CapI.Rind.060Col.4=CapV.(Rind.511Col.4+Rind.521Col.4)+CapVI.(Rind.711Col.6+Rind.721Col.6) | ERROR |
+| 67-144 | CapI.Rind.060Col.6=CapV.(Rind.511Col.5+Rind.521Col.5)+ CapVI.(Rind.711Col.7+Rind.721 Col.7+ Rind.711Col.8+Rind.721Col.8) | ERROR |
+| 67-145 | CapI.Rind.070Col.1=CapV.(Rind.541Col.1+Rind.551Col.1)+CapVI.(Rind.741Col.1+Rind.751Col.1+Rind.741Col.2+Rind.751Col.2) | ERROR |
+| 67-146 | CapI.Rind.070Col.2=CapV.(Rind.541Col.2+Rind.551Col.2)+CapVI.(Rind.741Col.3+Rind.751Col.3) | ERROR |
+| 67-147 | CapI.Rind.070Col.3=CapV.(Rind.541Col.3+Rind.551Col.3)+CapVI.(Rind.741Col.5+Rind.751Col.5) | ERROR |
+| 67-148 | CapI.Rind.070Col.4=CapV.(Rind.541Col.4+Rind.551Col.4)+CapVI.(Rind.741Col.6+Rind.751Col.6) | ERROR |
+| 67-150 | CapI.Rind.070Col.6=CapV.(Rind.511Col.5+Rind.551Col.5)+ CapVI.(Rind.741Col.7+Rind.751 Col.7+ Rind.741Col.8+Rind.751Col.8) | ERROR |
+| 67-580 | Rind 510 col.@col = Rind. 510-978 +..+ 510-999 col.@col. | ERROR |
+| (fara cod) | Câmpul nu este completat (dec_fiscCod_street) | WARNING |
