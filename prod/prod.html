@@ -1,0 +1,5273 @@
+<h3 class="webform-padding-sm webform-center">["1-INVEST ANUAL"]</h3>
+<h3 class="webform-padding-sm webform-center">["Raport statistic anual"]</h3>
+<h3 class="webform-padding-sm webform-center">["Investițiile străine, alocate de către întreprinderi în economia
+    Moldovei și tranzacțiile cu nerezidenții"]</h3>
+<p class="webform-padding-sm webform-center">["pentru anul"] @nalogPeriodType;@nalogPeriodLetter;A/@nalogPeriodYear;</p>
+
+</br>
+
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Denumirea"]:</span>@dec_fiscCod_name;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Adresa"]:</span>
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Raionul (municipiul)"]:</span>@dec_fiscCod_fisc;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Satul (comuna)"]:</span>@dec_fiscCod_cuatm;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Strada"]:</span>@dec_fiscCod_street;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod CUIÎO"]:</span> @dec_fiscCod_cuio;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Cod IDNO"]:</span>@dec_fiscCod_fiscal;
+</p>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Forma de proprietate"]:</span>@dec_fiscCod_cfp;
+</div>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Forma organizatorico-juridică"]:</span>@dec_fiscCod_cfoj;
+</div>
+<div class="webform-padding-sm webform-select2-inline">
+    <span class="webform-bold webform-right-sm">["Activitatea principală"]:</span>@dec_fiscCod_caem;
+</div>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Conducătorul"]:</span>@dec_director_director;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Executantul"]:</span>@dec_executant_name;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["Telefon"]:</span>@dec_fiscCod_telefon;
+</p>
+<p class="webform-padding-sm">
+    <span class="webform-bold webform-right-sm">["e-mail"]:</span>@dec_fiscCod_email;
+</p>
+<br />
+
+<h3 align="center">["I. Investițiile proprietarilor străini"]</h3>
+<p align="right">(["mii lei, cu zecimale"])</p>
+
+<!--Tabel dinamic id = 1-->
+
+<div id="dinamicTable1">
+    <a href="#" id="tab_con" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con1" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47" rowspan="3">
+                    <p align="center">
+                        <b>["Cod rînd"]</b>
+                    </p>
+                </td>
+                <td width="285" rowspan="3">
+                    <p align="center">
+                        <b>["Denumirea"]</b>
+                    </p>
+                </td>
+                <td width="70" rowspan="3">
+                    <p align="center">
+                        <b>["Cod ţară"]</b>
+                    </p>
+                </td>
+                <td width="70" rowspan="3">
+                    <p align="center">
+                        <b>["Sold la începutul anului de gestiune"]</b>
+                    </p>
+                </td>
+                <td colspan="4" align="center"><b>["Modificări în perioada de raportare"]</b></td>
+
+                <td colspan="2" rowspan="3" align="center">
+                    <b>["Sold la sfîrşitul perioadei de raportare(col.1+2-3+4+5)"]</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="204" colspan="2" align="center">
+                    <b>["În baza operaţiilor"]</b>
+                </td>
+                <td width="207" colspan="2" align="center">
+                    <b>["Modificarea netă"]</b>
+                </td>
+            </tr>
+            <tr>
+                <td width="104">
+                    <p align="center">
+                        <b>["majorări"]</b>
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        <b>["micşorări"]</b>
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        <b>["fluctuaţia ratei"]</b>
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        <b>["reclasificare"]</b>
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        <b>A</b>
+                    </p>
+                </td>
+                <td width="285">
+                    <p align="center">
+                        <b>B</b>
+                    </p>
+                </td>
+                <td width="70">
+                    <p align="center">
+                        <b>C</b>
+                    </p>
+                </td>
+                <td width="104">
+                    <p align="center">
+                        <b>1</b>
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        <b>2</b>
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        <b>3</b>
+                    </p>
+                </td>
+                <td width="100">
+                    <p align="center">
+                        <b>4</b>
+                    </p>
+                </td>
+                <td width="107">
+                    <p align="center">
+                        <b>5</b>
+                    </p>
+                </td>
+                <td width="104" colspan="2">
+                    <p align="center">
+                        <b>6</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        010
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Investiţii străine în capitalul social – total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table1_row_r010c1;
+                </td>
+                <td width="100">
+                    @dec_table1_row_r010c2;
+                </td>
+                <td width="107">
+                    @dec_table1_row_r010c3;
+                </td>
+                <td width="100" align="center">
+                    X
+                </td>
+                <td width="107">
+                    @dec_table1_row_r010c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table1_row_r010c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable1_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable1_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable1_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable1_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable1_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable1_row_c3;
+                </td>
+                <td width="100" align="center">
+                    X
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable1_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable1_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 2-->
+
+<div id="dinamicTable2">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con2" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        020
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Credite şi împrumuturi primite - total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table2_row_r020c1;
+                </td>
+                <td width="100">
+                    @dec_table2_row_r020c2;
+                </td>
+                <td width="107">
+                    @dec_table2_row_r020c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table2_row_r020c4;
+                </td>
+                <td width="107">
+                    @dec_table2_row_r020c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table2_row_r020c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable2_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable2_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable2_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable2_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable2_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable2_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable2_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable2_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable2_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 3-->
+
+<div id="dinamicTable3">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con3" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        030
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Datorii comerciale - total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table3_row_r030c1;
+                </td>
+                <td width="100">
+                    @dec_table3_row_r030c2;
+                </td>
+                <td width="107">
+                    @dec_table3_row_r030c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table3_row_r030c4;
+                </td>
+                <td width="107">
+                    @dec_table3_row_r030c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table3_row_r030c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable3_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable3_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable3_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable3_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable3_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable3_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable3_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable3_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable3_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 4-->
+
+<div id="dinamicTable4">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con4" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        040
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Alte datorii - total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table4_row_r040c1;
+                </td>
+                <td width="100">
+                    @dec_table4_row_r040c2;
+                </td>
+                <td width="107">
+                    @dec_table4_row_r040c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table4_row_r040c4;
+                </td>
+                <td width="107">
+                    @dec_table4_row_r040c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table4_row_r040c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable4_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable4_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable4_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable4_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable4_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable4_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable4_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable4_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable4_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 5-->
+
+<div id="dinamicTable5">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con5" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        050
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Împrumuturi acordate - total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table5_row_r050c1;
+                </td>
+                <td width="100">
+                    @dec_table5_row_r050c2;
+                </td>
+                <td width="107">
+                    @dec_table5_row_r050c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table5_row_r050c4;
+                </td>
+                <td width="107">
+                    @dec_table5_row_r050c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table5_row_r050c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable5_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable5_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable5_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable5_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable5_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable5_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable5_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable5_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable5_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 6-->
+
+<div id="dinamicTable6">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con6" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        060
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Creanţe comerciale - total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table6_row_r060c1;
+                </td>
+                <td width="100">
+                    @dec_table6_row_r060c2;
+                </td>
+                <td width="107">
+                    @dec_table6_row_r060c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table6_row_r060c4;
+                </td>
+                <td width="107">
+                    @dec_table6_row_r060c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table6_row_r060c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable6_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable6_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable6_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable6_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable6_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable6_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable6_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable6_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable6_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 7-->
+
+<div id="dinamicTable7">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con7" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        070
+                    </p>
+                </td>
+                <td width="285">
+                    <p>
+                        ["Alte creanţe- total"]
+                    </p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table7_row_r070c1;
+                </td>
+                <td width="100">
+                    @dec_table7_row_r070c2;
+                </td>
+                <td width="107">
+                    @dec_table7_row_r070c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table7_row_r070c4;
+                </td>
+                <td width="107">
+                    @dec_table7_row_r070c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table7_row_r070c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable7_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable7_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable7_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable7_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable7_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable7_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable7_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable7_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable7_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 8-->
+
+<div id="dinamicTable8">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con8" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        080
+                    </p>
+                </td>
+                <td width="285">
+                    <p>["Datorii privind dividendele - total"]</p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table8_row_r080c1;
+                </td>
+                <td width="100">
+                    @dec_table8_row_r080c2;
+                </td>
+                <td width="107">
+                    @dec_table8_row_r080c3;
+                </td>
+                <td width="100" align="center">
+                    X
+                </td>
+                <td width="107">
+                    @dec_table8_row_r080c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table8_row_r080c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable8_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable8_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable8_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable8_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable8_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable8_row_c3;
+                </td>
+                <td width="100" align="center">
+                    X
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable8_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable8_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 9-->
+
+<div id="dinamicTable9">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con9" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        090
+                    </p>
+                </td>
+                <td width="285">
+                    <p>["Datorii față de proprietarii străini aferente dobânzilor la credite și împrumuturi primite de
+                        la investitori - total"]</p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table9_row_r090c1;
+                </td>
+                <td width="100">
+                    @dec_table9_row_r090c2;
+                </td>
+                <td width="107">
+                    @dec_table9_row_r090c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table9_row_r090c4;
+                </td>
+                <td width="107">
+                    @dec_table9_row_r090c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table9_row_r090c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable9_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable9_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable9_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable9_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable9_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable9_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable9_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable9_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable9_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</br>
+
+<h3 align="center">["II. Părţile afiliate din străinătate"]</h3>
+</br>
+
+<!--Tabelul dinamic cu id = 10-->
+
+<div id="dinamicTable10">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con10" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        130
+                    </p>
+                </td>
+                <td width="285">
+                    <p>["Datorii față de părțile afiliate din străinătate cu excepția proprietarilor - total"]</p>
+                </td>
+                <td width="70" align="center">
+
+                </td>
+                <td width="104">
+                    @dec_table10_row_r130c1;
+                </td>
+                <td width="100">
+                    @dec_table10_row_r130c2;
+                </td>
+                <td width="107">
+                    @dec_table10_row_r130c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table10_row_r130c4;
+                </td>
+                <td width="107">
+                    @dec_table10_row_r130c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table10_row_r130c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable10_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable10_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable10_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable10_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable10_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable10_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable10_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable10_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable10_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Tabelul dinamic cu id = 11-->
+
+<div id="dinamicTable11">
+    <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+    <table id="tab_con11" border="1" class="grid">
+        <colgroup>
+            <col width="5%">
+            <col width="15%">
+            <col width="5%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="10%">
+            <col width="25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <td width="47">
+                    <p align="center">
+                        140
+                    </p>
+                </td>
+                <td width="285">
+                    <p>["Creanțe ale părților afiliate din străinătate cu excepția proprietarilor - total"]</p>
+                </td>
+                <td width="70" align="center">
+                </td>
+                <td width="104">
+                    @dec_table11_row_r140c1;
+                </td>
+                <td width="100">
+                    @dec_table11_row_r140c2;
+                </td>
+                <td width="107">
+                    @dec_table11_row_r140c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_table11_row_r140c4;
+                </td>
+                <td width="107">
+                    @dec_table11_row_r140c5;
+                </td>
+                <td width="104" colspan="2" align="center">
+                    @dec_table11_row_r140c6;
+                </td>
+            </tr>
+            <tr>
+                <td width="47">
+                </td>
+                <td colspan="9" width="285">
+                    <p>
+                        ["inclusiv pe ţări(max. 7):"]
+                    </p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="drow" align="center">
+                <td width="47" align="center">
+                    @dec_dinamicTable11_row_ca;
+                </td>
+                <td width="285" align="center">
+                    @dec_dinamicTable11_row_cb;
+                </td>
+                <td width="70" align="center">
+                    @dec_dinamicTable11_row_cc;
+                </td>
+                <td width="104" align="center">
+                    @dec_dinamicTable11_row_c1;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable11_row_c2;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable11_row_c3;
+                </td>
+                <td width="100" align="center">
+                    @dec_dinamicTable11_row_c4;
+                </td>
+                <td width="107" align="center">
+                    @dec_dinamicTable11_row_c5;
+                </td>
+                <td width="104" align="center" colspan="2">
+                    @dec_dinamicTable11_row_c6;
+                </td>
+                <td width="5px" class="delrow"><a href="#">["Şterge"]</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+
+<h3 align="center"><strong>V. ["Creanțe, investiții financiare și datorii pe termen lung aferente
+        nerezidenților"]</strong></h3>
+<p align="right">(["mii lei, cu zecimale"])</p>
+
+<table class="cap-5" width="100%">
+    <thead>
+        <tr>
+            <th rowspan="2">
+                <p align="center">["Indicatori"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Cod rd. / cod valută"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Sold la începutul anului de gestiune"]</p>
+            </th>
+            <th colspan="3">
+                <p align="center">["Modificări în anul de gestiune"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Sold la sfârșitul anului de gestiune"] (col.1+col.2-col.3±col.4)</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">["Intrări / majorări"]</p>
+            </th>
+            <th>
+                <p align="center">["Ieșiri / diminuări"]</p>
+            </th>
+            <th>
+                <p align="center">["Diferențe de curs valutar"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">A</p>
+            </th>
+            <th>
+                <p align="center">B</p>
+            </th>
+            <th>
+                <p align="center">1</p>
+            </th>
+            <th>
+                <p align="center">2</p>
+            </th>
+            <th>
+                <p align="center">3</p>
+            </th>
+            <th>
+                <p align="center">4</p>
+            </th>
+            <th>
+                <p align="center">5</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Row 500 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Creanțe și investiții financiare pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">500</p>
+            </td>
+            <td>@dec_table12_row500_totalc1;</td>
+            <td>@dec_table12_row500_totalc2;</td>
+            <td>@dec_table12_row500_totalc3;</td>
+            <td>@dec_table12_row500_totalc4;</td>
+            <td>@dec_table12_row500_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row500_v978c1;</td>
+            <td>@dec_table12_row500_v978c2;</td>
+            <td>@dec_table12_row500_v978c3;</td>
+            <td>@dec_table12_row500_v978c4;</td>
+            <td>@dec_table12_row500_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row500_v840c1;</td>
+            <td>@dec_table12_row500_v840c2;</td>
+            <td>@dec_table12_row500_v840c3;</td>
+            <td>@dec_table12_row500_v840c4;</td>
+            <td>@dec_table12_row500_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row500_v642c1;</td>
+            <td>@dec_table12_row500_v642c2;</td>
+            <td>@dec_table12_row500_v642c3;</td>
+            <td>@dec_table12_row500_v642c4;</td>
+            <td>@dec_table12_row500_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row500_v643c1;</td>
+            <td>@dec_table12_row500_v643c2;</td>
+            <td>@dec_table12_row500_v643c3;</td>
+            <td>@dec_table12_row500_v643c4;</td>
+            <td>@dec_table12_row500_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row500_v999c1;</td>
+            <td>@dec_table12_row500_v999c2;</td>
+            <td>@dec_table12_row500_v999c3;</td>
+            <td>@dec_table12_row500_v999c4;</td>
+            <td>@dec_table12_row500_v999c5;</td>
+        </tr>
+
+        <!-- Row 501 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">501</p>
+            </td>
+            <td>@dec_table12_row501_totalc1;</td>
+            <td>@dec_table12_row501_totalc2;</td>
+            <td>@dec_table12_row501_totalc3;</td>
+            <td>@dec_table12_row501_totalc4;</td>
+            <td>@dec_table12_row501_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row501_v978c1;</td>
+            <td>@dec_table12_row501_v978c2;</td>
+            <td>@dec_table12_row501_v978c3;</td>
+            <td>@dec_table12_row501_v978c4;</td>
+            <td>@dec_table12_row501_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row501_v840c1;</td>
+            <td>@dec_table12_row501_v840c2;</td>
+            <td>@dec_table12_row501_v840c3;</td>
+            <td>@dec_table12_row501_v840c4;</td>
+            <td>@dec_table12_row501_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row501_v642c1;</td>
+            <td>@dec_table12_row501_v642c2;</td>
+            <td>@dec_table12_row501_v642c3;</td>
+            <td>@dec_table12_row501_v642c4;</td>
+            <td>@dec_table12_row501_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row501_v643c1;</td>
+            <td>@dec_table12_row501_v643c2;</td>
+            <td>@dec_table12_row501_v643c3;</td>
+            <td>@dec_table12_row501_v643c4;</td>
+            <td>@dec_table12_row501_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row501_v999c1;</td>
+            <td>@dec_table12_row501_v999c2;</td>
+            <td>@dec_table12_row501_v999c3;</td>
+            <td>@dec_table12_row501_v999c4;</td>
+            <td>@dec_table12_row501_v999c5;</td>
+        </tr>
+
+        <!-- Row 510 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Creanțe comerciale pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">510</p>
+            </td>
+            <td>@dec_table12_row510_totalc1;</td>
+            <td>@dec_table12_row510_totalc2;</td>
+            <td>@dec_table12_row510_totalc3;</td>
+            <td>@dec_table12_row510_totalc4;</td>
+            <td>@dec_table12_row510_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row510_v978c1;</td>
+            <td>@dec_table12_row510_v978c2;</td>
+            <td>@dec_table12_row510_v978c3;</td>
+            <td>@dec_table12_row510_v978c4;</td>
+            <td>@dec_table12_row510_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row510_v840c1;</td>
+            <td>@dec_table12_row510_v840c2;</td>
+            <td>@dec_table12_row510_v840c3;</td>
+            <td>@dec_table12_row510_v840c4;</td>
+            <td>@dec_table12_row510_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row510_v642c1;</td>
+            <td>@dec_table12_row510_v642c2;</td>
+            <td>@dec_table12_row510_v642c3;</td>
+            <td>@dec_table12_row510_v642c4;</td>
+            <td>@dec_table12_row510_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row510_v643c1;</td>
+            <td>@dec_table12_row510_v643c2;</td>
+            <td>@dec_table12_row510_v643c3;</td>
+            <td>@dec_table12_row510_v643c4;</td>
+            <td>@dec_table12_row510_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row510_v999c1;</td>
+            <td>@dec_table12_row510_v999c2;</td>
+            <td>@dec_table12_row510_v999c3;</td>
+            <td>@dec_table12_row510_v999c4;</td>
+            <td>@dec_table12_row510_v999c5;</td>
+        </tr>
+
+        <!-- Row 511 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">511</p>
+            </td>
+            <td>@dec_table12_row511_totalc1;</td>
+            <td>@dec_table12_row511_totalc2;</td>
+            <td>@dec_table12_row511_totalc3;</td>
+            <td>@dec_table12_row511_totalc4;</td>
+            <td>@dec_table12_row511_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row511_v978c1;</td>
+            <td>@dec_table12_row511_v978c2;</td>
+            <td>@dec_table12_row511_v978c3;</td>
+            <td>@dec_table12_row511_v978c4;</td>
+            <td>@dec_table12_row511_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row511_v840c1;</td>
+            <td>@dec_table12_row511_v840c2;</td>
+            <td>@dec_table12_row511_v840c3;</td>
+            <td>@dec_table12_row511_v840c4;</td>
+            <td>@dec_table12_row511_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row511_v642c1;</td>
+            <td>@dec_table12_row511_v642c2;</td>
+            <td>@dec_table12_row511_v642c3;</td>
+            <td>@dec_table12_row511_v642c4;</td>
+            <td>@dec_table12_row511_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row511_v643c1;</td>
+            <td>@dec_table12_row511_v643c2;</td>
+            <td>@dec_table12_row511_v643c3;</td>
+            <td>@dec_table12_row511_v643c4;</td>
+            <td>@dec_table12_row511_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row511_v999c1;</td>
+            <td>@dec_table12_row511_v999c2;</td>
+            <td>@dec_table12_row511_v999c3;</td>
+            <td>@dec_table12_row511_v999c4;</td>
+            <td>@dec_table12_row511_v999c5;</td>
+        </tr>
+
+        <!-- Row 520 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Avansuri acordate pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">520</p>
+            </td>
+            <td>@dec_table12_row520_totalc1;</td>
+            <td>@dec_table12_row520_totalc2;</td>
+            <td>@dec_table12_row520_totalc3;</td>
+            <td>@dec_table12_row520_totalc4;</td>
+            <td>@dec_table12_row520_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row520_v978c1;</td>
+            <td>@dec_table12_row520_v978c2;</td>
+            <td>@dec_table12_row520_v978c3;</td>
+            <td>@dec_table12_row520_v978c4;</td>
+            <td>@dec_table12_row520_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row520_v840c1;</td>
+            <td>@dec_table12_row520_v840c2;</td>
+            <td>@dec_table12_row520_v840c3;</td>
+            <td>@dec_table12_row520_v840c4;</td>
+            <td>@dec_table12_row520_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row520_v642c1;</td>
+            <td>@dec_table12_row520_v642c2;</td>
+            <td>@dec_table12_row520_v642c3;</td>
+            <td>@dec_table12_row520_v642c4;</td>
+            <td>@dec_table12_row520_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row520_v643c1;</td>
+            <td>@dec_table12_row520_v643c2;</td>
+            <td>@dec_table12_row520_v643c3;</td>
+            <td>@dec_table12_row520_v643c4;</td>
+            <td>@dec_table12_row520_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row520_v999c1;</td>
+            <td>@dec_table12_row520_v999c2;</td>
+            <td>@dec_table12_row520_v999c3;</td>
+            <td>@dec_table12_row520_v999c4;</td>
+            <td>@dec_table12_row520_v999c5;</td>
+        </tr>
+
+        <!-- Row 521 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">521</p>
+            </td>
+            <td>@dec_table12_row521_totalc1;</td>
+            <td>@dec_table12_row521_totalc2;</td>
+            <td>@dec_table12_row521_totalc3;</td>
+            <td>@dec_table12_row521_totalc4;</td>
+            <td>@dec_table12_row521_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row521_v978c1;</td>
+            <td>@dec_table12_row521_v978c2;</td>
+            <td>@dec_table12_row521_v978c3;</td>
+            <td>@dec_table12_row521_v978c4;</td>
+            <td>@dec_table12_row521_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row521_v840c1;</td>
+            <td>@dec_table12_row521_v840c2;</td>
+            <td>@dec_table12_row521_v840c3;</td>
+            <td>@dec_table12_row521_v840c4;</td>
+            <td>@dec_table12_row521_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row521_v642c1;</td>
+            <td>@dec_table12_row521_v642c2;</td>
+            <td>@dec_table12_row521_v642c3;</td>
+            <td>@dec_table12_row521_v642c4;</td>
+            <td>@dec_table12_row521_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row521_v643c1;</td>
+            <td>@dec_table12_row521_v643c2;</td>
+            <td>@dec_table12_row521_v643c3;</td>
+            <td>@dec_table12_row521_v643c4;</td>
+            <td>@dec_table12_row521_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row521_v999c1;</td>
+            <td>@dec_table12_row521_v999c2;</td>
+            <td>@dec_table12_row521_v999c3;</td>
+            <td>@dec_table12_row521_v999c4;</td>
+            <td>@dec_table12_row521_v999c5;</td>
+        </tr>
+
+        <!-- Row 530 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Împrumuturi acordate și creanțe privind leasingul financiar pe termen lung –
+                    total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">530</p>
+            </td>
+            <td>@dec_table12_row530_totalc1;</td>
+            <td>@dec_table12_row530_totalc2;</td>
+            <td>@dec_table12_row530_totalc3;</td>
+            <td>@dec_table12_row530_totalc4;</td>
+            <td>@dec_table12_row530_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row530_v978c1;</td>
+            <td>@dec_table12_row530_v978c2;</td>
+            <td>@dec_table12_row530_v978c3;</td>
+            <td>@dec_table12_row530_v978c4;</td>
+            <td>@dec_table12_row530_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row530_v840c1;</td>
+            <td>@dec_table12_row530_v840c2;</td>
+            <td>@dec_table12_row530_v840c3;</td>
+            <td>@dec_table12_row530_v840c4;</td>
+            <td>@dec_table12_row530_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row530_v642c1;</td>
+            <td>@dec_table12_row530_v642c2;</td>
+            <td>@dec_table12_row530_v642c3;</td>
+            <td>@dec_table12_row530_v642c4;</td>
+            <td>@dec_table12_row530_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row530_v643c1;</td>
+            <td>@dec_table12_row530_v643c2;</td>
+            <td>@dec_table12_row530_v643c3;</td>
+            <td>@dec_table12_row530_v643c4;</td>
+            <td>@dec_table12_row530_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row530_v999c1;</td>
+            <td>@dec_table12_row530_v999c2;</td>
+            <td>@dec_table12_row530_v999c3;</td>
+            <td>@dec_table12_row530_v999c4;</td>
+            <td>@dec_table12_row530_v999c5;</td>
+        </tr>
+
+        <!-- Row 531 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">531</p>
+            </td>
+            <td>@dec_table12_row531_totalc1;</td>
+            <td>@dec_table12_row531_totalc2;</td>
+            <td>@dec_table12_row531_totalc3;</td>
+            <td>@dec_table12_row531_totalc4;</td>
+            <td>@dec_table12_row531_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row531_v978c1;</td>
+            <td>@dec_table12_row531_v978c2;</td>
+            <td>@dec_table12_row531_v978c3;</td>
+            <td>@dec_table12_row531_v978c4;</td>
+            <td>@dec_table12_row531_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row531_v840c1;</td>
+            <td>@dec_table12_row531_v840c2;</td>
+            <td>@dec_table12_row531_v840c3;</td>
+            <td>@dec_table12_row531_v840c4;</td>
+            <td>@dec_table12_row531_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row531_v642c1;</td>
+            <td>@dec_table12_row531_v642c2;</td>
+            <td>@dec_table12_row531_v642c3;</td>
+            <td>@dec_table12_row531_v642c4;</td>
+            <td>@dec_table12_row531_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row531_v643c1;</td>
+            <td>@dec_table12_row531_v643c2;</td>
+            <td>@dec_table12_row531_v643c3;</td>
+            <td>@dec_table12_row531_v643c4;</td>
+            <td>@dec_table12_row531_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row531_v999c1;</td>
+            <td>@dec_table12_row531_v999c2;</td>
+            <td>@dec_table12_row531_v999c3;</td>
+            <td>@dec_table12_row531_v999c4;</td>
+            <td>@dec_table12_row531_v999c5;</td>
+        </tr>
+
+        <!-- Row 540 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Depozite pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">540</p>
+            </td>
+            <td>@dec_table12_row540_totalc1;</td>
+            <td>@dec_table12_row540_totalc2;</td>
+            <td>@dec_table12_row540_totalc3;</td>
+            <td>@dec_table12_row540_totalc4;</td>
+            <td>@dec_table12_row540_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row540_v978c1;</td>
+            <td>@dec_table12_row540_v978c2;</td>
+            <td>@dec_table12_row540_v978c3;</td>
+            <td>@dec_table12_row540_v978c4;</td>
+            <td>@dec_table12_row540_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row540_v840c1;</td>
+            <td>@dec_table12_row540_v840c2;</td>
+            <td>@dec_table12_row540_v840c3;</td>
+            <td>@dec_table12_row540_v840c4;</td>
+            <td>@dec_table12_row540_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row540_v642c1;</td>
+            <td>@dec_table12_row540_v642c2;</td>
+            <td>@dec_table12_row540_v642c3;</td>
+            <td>@dec_table12_row540_v642c4;</td>
+            <td>@dec_table12_row540_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row540_v643c1;</td>
+            <td>@dec_table12_row540_v643c2;</td>
+            <td>@dec_table12_row540_v643c3;</td>
+            <td>@dec_table12_row540_v643c4;</td>
+            <td>@dec_table12_row540_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row540_v999c1;</td>
+            <td>@dec_table12_row540_v999c2;</td>
+            <td>@dec_table12_row540_v999c3;</td>
+            <td>@dec_table12_row540_v999c4;</td>
+            <td>@dec_table12_row540_v999c5;</td>
+        </tr>
+
+        <!-- Row 541 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">541</p>
+            </td>
+            <td>@dec_table12_row541_totalc1;</td>
+            <td>@dec_table12_row541_totalc2;</td>
+            <td>@dec_table12_row541_totalc3;</td>
+            <td>@dec_table12_row541_totalc4;</td>
+            <td>@dec_table12_row541_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row541_v978c1;</td>
+            <td>@dec_table12_row541_v978c2;</td>
+            <td>@dec_table12_row541_v978c3;</td>
+            <td>@dec_table12_row541_v978c4;</td>
+            <td>@dec_table12_row541_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row541_v840c1;</td>
+            <td>@dec_table12_row541_v840c2;</td>
+            <td>@dec_table12_row541_v840c3;</td>
+            <td>@dec_table12_row541_v840c4;</td>
+            <td>@dec_table12_row541_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row541_v642c1;</td>
+            <td>@dec_table12_row541_v642c2;</td>
+            <td>@dec_table12_row541_v642c3;</td>
+            <td>@dec_table12_row541_v642c4;</td>
+            <td>@dec_table12_row541_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row541_v643c1;</td>
+            <td>@dec_table12_row541_v643c2;</td>
+            <td>@dec_table12_row541_v643c3;</td>
+            <td>@dec_table12_row541_v643c4;</td>
+            <td>@dec_table12_row541_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row541_v999c1;</td>
+            <td>@dec_table12_row541_v999c2;</td>
+            <td>@dec_table12_row541_v999c3;</td>
+            <td>@dec_table12_row541_v999c4;</td>
+            <td>@dec_table12_row541_v999c5;</td>
+        </tr>
+
+        <!-- Row 550 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Datorii pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">550</p>
+            </td>
+            <td>@dec_table12_row550_totalc1;</td>
+            <td>@dec_table12_row550_totalc2;</td>
+            <td>@dec_table12_row550_totalc3;</td>
+            <td>@dec_table12_row550_totalc4;</td>
+            <td>@dec_table12_row550_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row550_v978c1;</td>
+            <td>@dec_table12_row550_v978c2;</td>
+            <td>@dec_table12_row550_v978c3;</td>
+            <td>@dec_table12_row550_v978c4;</td>
+            <td>@dec_table12_row550_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row550_v840c1;</td>
+            <td>@dec_table12_row550_v840c2;</td>
+            <td>@dec_table12_row550_v840c3;</td>
+            <td>@dec_table12_row550_v840c4;</td>
+            <td>@dec_table12_row550_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row550_v642c1;</td>
+            <td>@dec_table12_row550_v642c2;</td>
+            <td>@dec_table12_row550_v642c3;</td>
+            <td>@dec_table12_row550_v642c4;</td>
+            <td>@dec_table12_row550_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row550_v643c1;</td>
+            <td>@dec_table12_row550_v643c2;</td>
+            <td>@dec_table12_row550_v643c3;</td>
+            <td>@dec_table12_row550_v643c4;</td>
+            <td>@dec_table12_row550_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row550_v999c1;</td>
+            <td>@dec_table12_row550_v999c2;</td>
+            <td>@dec_table12_row550_v999c3;</td>
+            <td>@dec_table12_row550_v999c4;</td>
+            <td>@dec_table12_row550_v999c5;</td>
+        </tr>
+
+        <!-- Row 551 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">551</p>
+            </td>
+            <td>@dec_table12_row551_totalc1;</td>
+            <td>@dec_table12_row551_totalc2;</td>
+            <td>@dec_table12_row551_totalc3;</td>
+            <td>@dec_table12_row551_totalc4;</td>
+            <td>@dec_table12_row551_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row551_v978c1;</td>
+            <td>@dec_table12_row551_v978c2;</td>
+            <td>@dec_table12_row551_v978c3;</td>
+            <td>@dec_table12_row551_v978c4;</td>
+            <td>@dec_table12_row551_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row551_v840c1;</td>
+            <td>@dec_table12_row551_v840c2;</td>
+            <td>@dec_table12_row551_v840c3;</td>
+            <td>@dec_table12_row551_v840c4;</td>
+            <td>@dec_table12_row551_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row551_v642c1;</td>
+            <td>@dec_table12_row551_v642c2;</td>
+            <td>@dec_table12_row551_v642c3;</td>
+            <td>@dec_table12_row551_v642c4;</td>
+            <td>@dec_table12_row551_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row551_v643c1;</td>
+            <td>@dec_table12_row551_v643c2;</td>
+            <td>@dec_table12_row551_v643c3;</td>
+            <td>@dec_table12_row551_v643c4;</td>
+            <td>@dec_table12_row551_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row551_v999c1;</td>
+            <td>@dec_table12_row551_v999c2;</td>
+            <td>@dec_table12_row551_v999c3;</td>
+            <td>@dec_table12_row551_v999c4;</td>
+            <td>@dec_table12_row551_v999c5;</td>
+        </tr>
+
+        <!-- Row 560 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Datorii pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">560</p>
+            </td>
+            <td>@dec_table12_row560_totalc1;</td>
+            <td>@dec_table12_row560_totalc2;</td>
+            <td>@dec_table12_row560_totalc3;</td>
+            <td>@dec_table12_row560_totalc4;</td>
+            <td>@dec_table12_row560_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row560_v978c1;</td>
+            <td>@dec_table12_row560_v978c2;</td>
+            <td>@dec_table12_row560_v978c3;</td>
+            <td>@dec_table12_row560_v978c4;</td>
+            <td>@dec_table12_row560_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row560_v840c1;</td>
+            <td>@dec_table12_row560_v840c2;</td>
+            <td>@dec_table12_row560_v840c3;</td>
+            <td>@dec_table12_row560_v840c4;</td>
+            <td>@dec_table12_row560_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row560_v642c1;</td>
+            <td>@dec_table12_row560_v642c2;</td>
+            <td>@dec_table12_row560_v642c3;</td>
+            <td>@dec_table12_row560_v642c4;</td>
+            <td>@dec_table12_row560_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row560_v643c1;</td>
+            <td>@dec_table12_row560_v643c2;</td>
+            <td>@dec_table12_row560_v643c3;</td>
+            <td>@dec_table12_row560_v643c4;</td>
+            <td>@dec_table12_row560_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row560_v999c1;</td>
+            <td>@dec_table12_row560_v999c2;</td>
+            <td>@dec_table12_row560_v999c3;</td>
+            <td>@dec_table12_row560_v999c4;</td>
+            <td>@dec_table12_row560_v999c5;</td>
+        </tr>
+
+        <!-- Row 561 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">561</p>
+            </td>
+            <td>@dec_table12_row561_totalc1;</td>
+            <td>@dec_table12_row561_totalc2;</td>
+            <td>@dec_table12_row561_totalc3;</td>
+            <td>@dec_table12_row561_totalc4;</td>
+            <td>@dec_table12_row561_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row561_v978c1;</td>
+            <td>@dec_table12_row561_v978c2;</td>
+            <td>@dec_table12_row561_v978c3;</td>
+            <td>@dec_table12_row561_v978c4;</td>
+            <td>@dec_table12_row561_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row561_v840c1;</td>
+            <td>@dec_table12_row561_v840c2;</td>
+            <td>@dec_table12_row561_v840c3;</td>
+            <td>@dec_table12_row561_v840c4;</td>
+            <td>@dec_table12_row561_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row561_v642c1;</td>
+            <td>@dec_table12_row561_v642c2;</td>
+            <td>@dec_table12_row561_v642c3;</td>
+            <td>@dec_table12_row561_v642c4;</td>
+            <td>@dec_table12_row561_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row561_v643c1;</td>
+            <td>@dec_table12_row561_v643c2;</td>
+            <td>@dec_table12_row561_v643c3;</td>
+            <td>@dec_table12_row561_v643c4;</td>
+            <td>@dec_table12_row561_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row561_v999c1;</td>
+            <td>@dec_table12_row561_v999c2;</td>
+            <td>@dec_table12_row561_v999c3;</td>
+            <td>@dec_table12_row561_v999c4;</td>
+            <td>@dec_table12_row561_v999c5;</td>
+        </tr>
+
+        <!-- Row 570 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Datorii comerciale pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">570</p>
+            </td>
+            <td>@dec_table12_row570_totalc1;</td>
+            <td>@dec_table12_row570_totalc2;</td>
+            <td>@dec_table12_row570_totalc3;</td>
+            <td>@dec_table12_row570_totalc4;</td>
+            <td>@dec_table12_row570_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row570_v978c1;</td>
+            <td>@dec_table12_row570_v978c2;</td>
+            <td>@dec_table12_row570_v978c3;</td>
+            <td>@dec_table12_row570_v978c4;</td>
+            <td>@dec_table12_row570_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row570_v840c1;</td>
+            <td>@dec_table12_row570_v840c2;</td>
+            <td>@dec_table12_row570_v840c3;</td>
+            <td>@dec_table12_row570_v840c4;</td>
+            <td>@dec_table12_row570_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row570_v642c1;</td>
+            <td>@dec_table12_row570_v642c2;</td>
+            <td>@dec_table12_row570_v642c3;</td>
+            <td>@dec_table12_row570_v642c4;</td>
+            <td>@dec_table12_row570_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row570_v643c1;</td>
+            <td>@dec_table12_row570_v643c2;</td>
+            <td>@dec_table12_row570_v643c3;</td>
+            <td>@dec_table12_row570_v643c4;</td>
+            <td>@dec_table12_row570_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row570_v999c1;</td>
+            <td>@dec_table12_row570_v999c2;</td>
+            <td>@dec_table12_row570_v999c3;</td>
+            <td>@dec_table12_row570_v999c4;</td>
+            <td>@dec_table12_row570_v999c5;</td>
+        </tr>
+
+        <!-- Row 571 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">571</p>
+            </td>
+            <td>@dec_table12_row571_totalc1;</td>
+            <td>@dec_table12_row571_totalc2;</td>
+            <td>@dec_table12_row571_totalc3;</td>
+            <td>@dec_table12_row571_totalc4;</td>
+            <td>@dec_table12_row571_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row571_v978c1;</td>
+            <td>@dec_table12_row571_v978c2;</td>
+            <td>@dec_table12_row571_v978c3;</td>
+            <td>@dec_table12_row571_v978c4;</td>
+            <td>@dec_table12_row571_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row571_v840c1;</td>
+            <td>@dec_table12_row571_v840c2;</td>
+            <td>@dec_table12_row571_v840c3;</td>
+            <td>@dec_table12_row571_v840c4;</td>
+            <td>@dec_table12_row571_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row571_v642c1;</td>
+            <td>@dec_table12_row571_v642c2;</td>
+            <td>@dec_table12_row571_v642c3;</td>
+            <td>@dec_table12_row571_v642c4;</td>
+            <td>@dec_table12_row571_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row571_v643c1;</td>
+            <td>@dec_table12_row571_v643c2;</td>
+            <td>@dec_table12_row571_v643c3;</td>
+            <td>@dec_table12_row571_v643c4;</td>
+            <td>@dec_table12_row571_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row571_v999c1;</td>
+            <td>@dec_table12_row571_v999c2;</td>
+            <td>@dec_table12_row571_v999c3;</td>
+            <td>@dec_table12_row571_v999c4;</td>
+            <td>@dec_table12_row571_v999c5;</td>
+        </tr>
+
+        <!-- Row 580 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Avansuri primite pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">580</p>
+            </td>
+            <td>@dec_table12_row580_totalc1;</td>
+            <td>@dec_table12_row580_totalc2;</td>
+            <td>@dec_table12_row580_totalc3;</td>
+            <td>@dec_table12_row580_totalc4;</td>
+            <td>@dec_table12_row580_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row580_v978c1;</td>
+            <td>@dec_table12_row580_v978c2;</td>
+            <td>@dec_table12_row580_v978c3;</td>
+            <td>@dec_table12_row580_v978c4;</td>
+            <td>@dec_table12_row580_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row580_v840c1;</td>
+            <td>@dec_table12_row580_v840c2;</td>
+            <td>@dec_table12_row580_v840c3;</td>
+            <td>@dec_table12_row580_v840c4;</td>
+            <td>@dec_table12_row580_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row580_v642c1;</td>
+            <td>@dec_table12_row580_v642c2;</td>
+            <td>@dec_table12_row580_v642c3;</td>
+            <td>@dec_table12_row580_v642c4;</td>
+            <td>@dec_table12_row580_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row580_v643c1;</td>
+            <td>@dec_table12_row580_v643c2;</td>
+            <td>@dec_table12_row580_v643c3;</td>
+            <td>@dec_table12_row580_v643c4;</td>
+            <td>@dec_table12_row580_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row580_v999c1;</td>
+            <td>@dec_table12_row580_v999c2;</td>
+            <td>@dec_table12_row580_v999c3;</td>
+            <td>@dec_table12_row580_v999c4;</td>
+            <td>@dec_table12_row580_v999c5;</td>
+        </tr>
+
+        <!-- Row 581 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">581</p>
+            </td>
+            <td>@dec_table12_row581_totalc1;</td>
+            <td>@dec_table12_row581_totalc2;</td>
+            <td>@dec_table12_row581_totalc3;</td>
+            <td>@dec_table12_row581_totalc4;</td>
+            <td>@dec_table12_row581_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row581_v978c1;</td>
+            <td>@dec_table12_row581_v978c2;</td>
+            <td>@dec_table12_row581_v978c3;</td>
+            <td>@dec_table12_row581_v978c4;</td>
+            <td>@dec_table12_row581_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row581_v840c1;</td>
+            <td>@dec_table12_row581_v840c2;</td>
+            <td>@dec_table12_row581_v840c3;</td>
+            <td>@dec_table12_row581_v840c4;</td>
+            <td>@dec_table12_row581_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row581_v642c1;</td>
+            <td>@dec_table12_row581_v642c2;</td>
+            <td>@dec_table12_row581_v642c3;</td>
+            <td>@dec_table12_row581_v642c4;</td>
+            <td>@dec_table12_row581_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row581_v643c1;</td>
+            <td>@dec_table12_row581_v643c2;</td>
+            <td>@dec_table12_row581_v643c3;</td>
+            <td>@dec_table12_row581_v643c4;</td>
+            <td>@dec_table12_row581_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row581_v999c1;</td>
+            <td>@dec_table12_row581_v999c2;</td>
+            <td>@dec_table12_row581_v999c3;</td>
+            <td>@dec_table12_row581_v999c4;</td>
+            <td>@dec_table12_row581_v999c5;</td>
+        </tr>
+
+        <!-- Row 590 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Credite bancare, împrumuturi și datorii privind leasingul financiar pe termen
+                    lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">590</p>
+            </td>
+            <td>@dec_table12_row590_totalc1;</td>
+            <td>@dec_table12_row590_totalc2;</td>
+            <td>@dec_table12_row590_totalc3;</td>
+            <td>@dec_table12_row590_totalc4;</td>
+            <td>@dec_table12_row590_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row590_v978c1;</td>
+            <td>@dec_table12_row590_v978c2;</td>
+            <td>@dec_table12_row590_v978c3;</td>
+            <td>@dec_table12_row590_v978c4;</td>
+            <td>@dec_table12_row590_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row590_v840c1;</td>
+            <td>@dec_table12_row590_v840c2;</td>
+            <td>@dec_table12_row590_v840c3;</td>
+            <td>@dec_table12_row590_v840c4;</td>
+            <td>@dec_table12_row590_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row590_v642c1;</td>
+            <td>@dec_table12_row590_v642c2;</td>
+            <td>@dec_table12_row590_v642c3;</td>
+            <td>@dec_table12_row590_v642c4;</td>
+            <td>@dec_table12_row590_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row590_v643c1;</td>
+            <td>@dec_table12_row590_v643c2;</td>
+            <td>@dec_table12_row590_v643c3;</td>
+            <td>@dec_table12_row590_v643c4;</td>
+            <td>@dec_table12_row590_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row590_v999c1;</td>
+            <td>@dec_table12_row590_v999c2;</td>
+            <td>@dec_table12_row590_v999c3;</td>
+            <td>@dec_table12_row590_v999c4;</td>
+            <td>@dec_table12_row590_v999c5;</td>
+        </tr>
+
+        <!-- Row 591 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">591</p>
+            </td>
+            <td>@dec_table12_row591_totalc1;</td>
+            <td>@dec_table12_row591_totalc2;</td>
+            <td>@dec_table12_row591_totalc3;</td>
+            <td>@dec_table12_row591_totalc4;</td>
+            <td>@dec_table12_row591_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row591_v978c1;</td>
+            <td>@dec_table12_row591_v978c2;</td>
+            <td>@dec_table12_row591_v978c3;</td>
+            <td>@dec_table12_row591_v978c4;</td>
+            <td>@dec_table12_row591_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row591_v840c1;</td>
+            <td>@dec_table12_row591_v840c2;</td>
+            <td>@dec_table12_row591_v840c3;</td>
+            <td>@dec_table12_row591_v840c4;</td>
+            <td>@dec_table12_row591_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row591_v642c1;</td>
+            <td>@dec_table12_row591_v642c2;</td>
+            <td>@dec_table12_row591_v642c3;</td>
+            <td>@dec_table12_row591_v642c4;</td>
+            <td>@dec_table12_row591_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row591_v643c1;</td>
+            <td>@dec_table12_row591_v643c2;</td>
+            <td>@dec_table12_row591_v643c3;</td>
+            <td>@dec_table12_row591_v643c4;</td>
+            <td>@dec_table12_row591_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row591_v999c1;</td>
+            <td>@dec_table12_row591_v999c2;</td>
+            <td>@dec_table12_row591_v999c3;</td>
+            <td>@dec_table12_row591_v999c4;</td>
+            <td>@dec_table12_row591_v999c5;</td>
+        </tr>
+
+        <!-- Row 600 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Alte datorii pe termen lung – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">600</p>
+            </td>
+            <td>@dec_table12_row600_totalc1;</td>
+            <td>@dec_table12_row600_totalc2;</td>
+            <td>@dec_table12_row600_totalc3;</td>
+            <td>@dec_table12_row600_totalc4;</td>
+            <td>@dec_table12_row600_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row600_v978c1;</td>
+            <td>@dec_table12_row600_v978c2;</td>
+            <td>@dec_table12_row600_v978c3;</td>
+            <td>@dec_table12_row600_v978c4;</td>
+            <td>@dec_table12_row600_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row600_v840c1;</td>
+            <td>@dec_table12_row600_v840c2;</td>
+            <td>@dec_table12_row600_v840c3;</td>
+            <td>@dec_table12_row600_v840c4;</td>
+            <td>@dec_table12_row600_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row600_v642c1;</td>
+            <td>@dec_table12_row600_v642c2;</td>
+            <td>@dec_table12_row600_v642c3;</td>
+            <td>@dec_table12_row600_v642c4;</td>
+            <td>@dec_table12_row600_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row600_v643c1;</td>
+            <td>@dec_table12_row600_v643c2;</td>
+            <td>@dec_table12_row600_v643c3;</td>
+            <td>@dec_table12_row600_v643c4;</td>
+            <td>@dec_table12_row600_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row600_v999c1;</td>
+            <td>@dec_table12_row600_v999c2;</td>
+            <td>@dec_table12_row600_v999c3;</td>
+            <td>@dec_table12_row600_v999c4;</td>
+            <td>@dec_table12_row600_v999c5;</td>
+        </tr>
+
+        <!-- Row 601 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">601</p>
+            </td>
+            <td>@dec_table12_row601_totalc1;</td>
+            <td>@dec_table12_row601_totalc2;</td>
+            <td>@dec_table12_row601_totalc3;</td>
+            <td>@dec_table12_row601_totalc4;</td>
+            <td>@dec_table12_row601_totalc5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table12_row601_v978c1;</td>
+            <td>@dec_table12_row601_v978c2;</td>
+            <td>@dec_table12_row601_v978c3;</td>
+            <td>@dec_table12_row601_v978c4;</td>
+            <td>@dec_table12_row601_v978c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table12_row601_v840c1;</td>
+            <td>@dec_table12_row601_v840c2;</td>
+            <td>@dec_table12_row601_v840c3;</td>
+            <td>@dec_table12_row601_v840c4;</td>
+            <td>@dec_table12_row601_v840c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table12_row601_v642c1;</td>
+            <td>@dec_table12_row601_v642c2;</td>
+            <td>@dec_table12_row601_v642c3;</td>
+            <td>@dec_table12_row601_v642c4;</td>
+            <td>@dec_table12_row601_v642c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table12_row601_v643c1;</td>
+            <td>@dec_table12_row601_v643c2;</td>
+            <td>@dec_table12_row601_v643c3;</td>
+            <td>@dec_table12_row601_v643c4;</td>
+            <td>@dec_table12_row601_v643c5;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table12_row601_v999c1;</td>
+            <td>@dec_table12_row601_v999c2;</td>
+            <td>@dec_table12_row601_v999c3;</td>
+            <td>@dec_table12_row601_v999c4;</td>
+            <td>@dec_table12_row601_v999c5;</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<h3 align="center"><strong>VI. ["Creanțe, investiții financiare și datorii curente aferente nerezidenților"]</strong>
+</h3>
+<p align="right">(["mii lei, cu zecimale"])</p>
+
+<table class="cap-6" width="100%">
+    <thead>
+        <tr>
+            <th rowspan="3">
+                <p align="center">["Indicatori"]</p>
+            </th>
+            <th rowspan="3">
+                <p align="center">["Cod rd. / cod valută"]</p>
+            </th>
+            <th colspan="2">
+                <p align="center">["Sold la începutul perioadei de gestiune"]</p>
+            </th>
+            <th colspan="4">
+                <p align="center">["Modificări în perioada de gestiune"]</p>
+            </th>
+            <th colspan="2">
+                <p align="center">["Sold la sfârșitul perioadei de gestiune"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="2">
+                <p align="center">["La care termenul de plată nu a sosit sau este expirat până la un an"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Termen ul expirat mai mult de un an"]</p>
+            </th>
+            <th colspan="2">
+                <p align="center">["Intrări/majorări"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Ieșiri / diminuări"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Diferențe de curs valutar"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["La care termenul de plată nu a sosit sau este expirat până la un an"]</p>
+            </th>
+            <th rowspan="2">
+                <p align="center">["Termenul expirat mai mult de un an"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">["Total"]</p>
+            </th>
+            <th>
+                <p align="center">["Transferări din active și datorii pe termen lung în active și datorii curente"]</p>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p align="center">A</p>
+            </th>
+            <th>
+                <p align="center">B</p>
+            </th>
+            <th>
+                <p align="center">1</p>
+            </th>
+            <th>
+                <p align="center">2</p>
+            </th>
+            <th>
+                <p align="center">3</p>
+            </th>
+            <th>
+                <p align="center">4</p>
+            </th>
+            <th>
+                <p align="center">5</p>
+            </th>
+            <th>
+                <p align="center">6</p>
+            </th>
+            <th>
+                <p align="center">7</p>
+            </th>
+            <th>
+                <p align="center">8</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Row 700 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Creanțe și investiții financiare curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">700</p>
+            </td>
+            <td>@dec_table13_row700_totalc1;</td>
+            <td>@dec_table13_row700_totalc2;</td>
+            <td>@dec_table13_row700_totalc3;</td>
+            <td>@dec_table13_row700_totalc4;</td>
+            <td>@dec_table13_row700_totalc5;</td>
+            <td>@dec_table13_row700_totalc6;</td>
+            <td>@dec_table13_row700_totalc7;</td>
+            <td>@dec_table13_row700_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row700_v978c1;</td>
+            <td>@dec_table13_row700_v978c2;</td>
+            <td>@dec_table13_row700_v978c3;</td>
+            <td>@dec_table13_row700_v978c4;</td>
+            <td>@dec_table13_row700_v978c5;</td>
+            <td>@dec_table13_row700_v978c6;</td>
+            <td>@dec_table13_row700_v978c7;</td>
+            <td>@dec_table13_row700_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row700_v840c1;</td>
+            <td>@dec_table13_row700_v840c2;</td>
+            <td>@dec_table13_row700_v840c3;</td>
+            <td>@dec_table13_row700_v840c4;</td>
+            <td>@dec_table13_row700_v840c5;</td>
+            <td>@dec_table13_row700_v840c6;</td>
+            <td>@dec_table13_row700_v840c7;</td>
+            <td>@dec_table13_row700_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row700_v642c1;</td>
+            <td>@dec_table13_row700_v642c2;</td>
+            <td>@dec_table13_row700_v642c3;</td>
+            <td>@dec_table13_row700_v642c4;</td>
+            <td>@dec_table13_row700_v642c5;</td>
+            <td>@dec_table13_row700_v642c6;</td>
+            <td>@dec_table13_row700_v642c7;</td>
+            <td>@dec_table13_row700_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row700_v643c1;</td>
+            <td>@dec_table13_row700_v643c2;</td>
+            <td>@dec_table13_row700_v643c3;</td>
+            <td>@dec_table13_row700_v643c4;</td>
+            <td>@dec_table13_row700_v643c5;</td>
+            <td>@dec_table13_row700_v643c6;</td>
+            <td>@dec_table13_row700_v643c7;</td>
+            <td>@dec_table13_row700_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row700_v999c1;</td>
+            <td>@dec_table13_row700_v999c2;</td>
+            <td>@dec_table13_row700_v999c3;</td>
+            <td>@dec_table13_row700_v999c4;</td>
+            <td>@dec_table13_row700_v999c5;</td>
+            <td>@dec_table13_row700_v999c6;</td>
+            <td>@dec_table13_row700_v999c7;</td>
+            <td>@dec_table13_row700_v999c8;</td>
+        </tr>
+
+        <!-- Row 701 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">701</p>
+            </td>
+            <td>@dec_table13_row701_totalc1;</td>
+            <td>@dec_table13_row701_totalc2;</td>
+            <td>@dec_table13_row701_totalc3;</td>
+            <td>@dec_table13_row701_totalc4;</td>
+            <td>@dec_table13_row701_totalc5;</td>
+            <td>@dec_table13_row701_totalc6;</td>
+            <td>@dec_table13_row701_totalc7;</td>
+            <td>@dec_table13_row701_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row701_v978c1;</td>
+            <td>@dec_table13_row701_v978c2;</td>
+            <td>@dec_table13_row701_v978c3;</td>
+            <td>@dec_table13_row701_v978c4;</td>
+            <td>@dec_table13_row701_v978c5;</td>
+            <td>@dec_table13_row701_v978c6;</td>
+            <td>@dec_table13_row701_v978c7;</td>
+            <td>@dec_table13_row701_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row701_v840c1;</td>
+            <td>@dec_table13_row701_v840c2;</td>
+            <td>@dec_table13_row701_v840c3;</td>
+            <td>@dec_table13_row701_v840c4;</td>
+            <td>@dec_table13_row701_v840c5;</td>
+            <td>@dec_table13_row701_v840c6;</td>
+            <td>@dec_table13_row701_v840c7;</td>
+            <td>@dec_table13_row701_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row701_v642c1;</td>
+            <td>@dec_table13_row701_v642c2;</td>
+            <td>@dec_table13_row701_v642c3;</td>
+            <td>@dec_table13_row701_v642c4;</td>
+            <td>@dec_table13_row701_v642c5;</td>
+            <td>@dec_table13_row701_v642c6;</td>
+            <td>@dec_table13_row701_v642c7;</td>
+            <td>@dec_table13_row701_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row701_v643c1;</td>
+            <td>@dec_table13_row701_v643c2;</td>
+            <td>@dec_table13_row701_v643c3;</td>
+            <td>@dec_table13_row701_v643c4;</td>
+            <td>@dec_table13_row701_v643c5;</td>
+            <td>@dec_table13_row701_v643c6;</td>
+            <td>@dec_table13_row701_v643c7;</td>
+            <td>@dec_table13_row701_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row701_v999c1;</td>
+            <td>@dec_table13_row701_v999c2;</td>
+            <td>@dec_table13_row701_v999c3;</td>
+            <td>@dec_table13_row701_v999c4;</td>
+            <td>@dec_table13_row701_v999c5;</td>
+            <td>@dec_table13_row701_v999c6;</td>
+            <td>@dec_table13_row701_v999c7;</td>
+            <td>@dec_table13_row701_v999c8;</td>
+        </tr>
+
+        <!-- Row 710 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Creanțe comerciale curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">710</p>
+            </td>
+            <td>@dec_table13_row710_totalc1;</td>
+            <td>@dec_table13_row710_totalc2;</td>
+            <td>@dec_table13_row710_totalc3;</td>
+            <td>@dec_table13_row710_totalc4;</td>
+            <td>@dec_table13_row710_totalc5;</td>
+            <td>@dec_table13_row710_totalc6;</td>
+            <td>@dec_table13_row710_totalc7;</td>
+            <td>@dec_table13_row710_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row710_v978c1;</td>
+            <td>@dec_table13_row710_v978c2;</td>
+            <td>@dec_table13_row710_v978c3;</td>
+            <td>@dec_table13_row710_v978c4;</td>
+            <td>@dec_table13_row710_v978c5;</td>
+            <td>@dec_table13_row710_v978c6;</td>
+            <td>@dec_table13_row710_v978c7;</td>
+            <td>@dec_table13_row710_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row710_v840c1;</td>
+            <td>@dec_table13_row710_v840c2;</td>
+            <td>@dec_table13_row710_v840c3;</td>
+            <td>@dec_table13_row710_v840c4;</td>
+            <td>@dec_table13_row710_v840c5;</td>
+            <td>@dec_table13_row710_v840c6;</td>
+            <td>@dec_table13_row710_v840c7;</td>
+            <td>@dec_table13_row710_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row710_v642c1;</td>
+            <td>@dec_table13_row710_v642c2;</td>
+            <td>@dec_table13_row710_v642c3;</td>
+            <td>@dec_table13_row710_v642c4;</td>
+            <td>@dec_table13_row710_v642c5;</td>
+            <td>@dec_table13_row710_v642c6;</td>
+            <td>@dec_table13_row710_v642c7;</td>
+            <td>@dec_table13_row710_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row710_v643c1;</td>
+            <td>@dec_table13_row710_v643c2;</td>
+            <td>@dec_table13_row710_v643c3;</td>
+            <td>@dec_table13_row710_v643c4;</td>
+            <td>@dec_table13_row710_v643c5;</td>
+            <td>@dec_table13_row710_v643c6;</td>
+            <td>@dec_table13_row710_v643c7;</td>
+            <td>@dec_table13_row710_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row710_v999c1;</td>
+            <td>@dec_table13_row710_v999c2;</td>
+            <td>@dec_table13_row710_v999c3;</td>
+            <td>@dec_table13_row710_v999c4;</td>
+            <td>@dec_table13_row710_v999c5;</td>
+            <td>@dec_table13_row710_v999c6;</td>
+            <td>@dec_table13_row710_v999c7;</td>
+            <td>@dec_table13_row710_v999c8;</td>
+        </tr>
+
+        <!-- Row 711 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">711</p>
+            </td>
+            <td>@dec_table13_row711_totalc1;</td>
+            <td>@dec_table13_row711_totalc2;</td>
+            <td>@dec_table13_row711_totalc3;</td>
+            <td>@dec_table13_row711_totalc4;</td>
+            <td>@dec_table13_row711_totalc5;</td>
+            <td>@dec_table13_row711_totalc6;</td>
+            <td>@dec_table13_row711_totalc7;</td>
+            <td>@dec_table13_row711_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row711_v978c1;</td>
+            <td>@dec_table13_row711_v978c2;</td>
+            <td>@dec_table13_row711_v978c3;</td>
+            <td>@dec_table13_row711_v978c4;</td>
+            <td>@dec_table13_row711_v978c5;</td>
+            <td>@dec_table13_row711_v978c6;</td>
+            <td>@dec_table13_row711_v978c7;</td>
+            <td>@dec_table13_row711_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row711_v840c1;</td>
+            <td>@dec_table13_row711_v840c2;</td>
+            <td>@dec_table13_row711_v840c3;</td>
+            <td>@dec_table13_row711_v840c4;</td>
+            <td>@dec_table13_row711_v840c5;</td>
+            <td>@dec_table13_row711_v840c6;</td>
+            <td>@dec_table13_row711_v840c7;</td>
+            <td>@dec_table13_row711_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row711_v642c1;</td>
+            <td>@dec_table13_row711_v642c2;</td>
+            <td>@dec_table13_row711_v642c3;</td>
+            <td>@dec_table13_row711_v642c4;</td>
+            <td>@dec_table13_row711_v642c5;</td>
+            <td>@dec_table13_row711_v642c6;</td>
+            <td>@dec_table13_row711_v642c7;</td>
+            <td>@dec_table13_row711_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row711_v643c1;</td>
+            <td>@dec_table13_row711_v643c2;</td>
+            <td>@dec_table13_row711_v643c3;</td>
+            <td>@dec_table13_row711_v643c4;</td>
+            <td>@dec_table13_row711_v643c5;</td>
+            <td>@dec_table13_row711_v643c6;</td>
+            <td>@dec_table13_row711_v643c7;</td>
+            <td>@dec_table13_row711_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row711_v999c1;</td>
+            <td>@dec_table13_row711_v999c2;</td>
+            <td>@dec_table13_row711_v999c3;</td>
+            <td>@dec_table13_row711_v999c4;</td>
+            <td>@dec_table13_row711_v999c5;</td>
+            <td>@dec_table13_row711_v999c6;</td>
+            <td>@dec_table13_row711_v999c7;</td>
+            <td>@dec_table13_row711_v999c8;</td>
+        </tr>
+
+        <!-- Row 720 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Avansuri acordate curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">720</p>
+            </td>
+            <td>@dec_table13_row720_totalc1;</td>
+            <td>@dec_table13_row720_totalc2;</td>
+            <td>@dec_table13_row720_totalc3;</td>
+            <td>@dec_table13_row720_totalc4;</td>
+            <td>@dec_table13_row720_totalc5;</td>
+            <td>@dec_table13_row720_totalc6;</td>
+            <td>@dec_table13_row720_totalc7;</td>
+            <td>@dec_table13_row720_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row720_v978c1;</td>
+            <td>@dec_table13_row720_v978c2;</td>
+            <td>@dec_table13_row720_v978c3;</td>
+            <td>@dec_table13_row720_v978c4;</td>
+            <td>@dec_table13_row720_v978c5;</td>
+            <td>@dec_table13_row720_v978c6;</td>
+            <td>@dec_table13_row720_v978c7;</td>
+            <td>@dec_table13_row720_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row720_v840c1;</td>
+            <td>@dec_table13_row720_v840c2;</td>
+            <td>@dec_table13_row720_v840c3;</td>
+            <td>@dec_table13_row720_v840c4;</td>
+            <td>@dec_table13_row720_v840c5;</td>
+            <td>@dec_table13_row720_v840c6;</td>
+            <td>@dec_table13_row720_v840c7;</td>
+            <td>@dec_table13_row720_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row720_v642c1;</td>
+            <td>@dec_table13_row720_v642c2;</td>
+            <td>@dec_table13_row720_v642c3;</td>
+            <td>@dec_table13_row720_v642c4;</td>
+            <td>@dec_table13_row720_v642c5;</td>
+            <td>@dec_table13_row720_v642c6;</td>
+            <td>@dec_table13_row720_v642c7;</td>
+            <td>@dec_table13_row720_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row720_v643c1;</td>
+            <td>@dec_table13_row720_v643c2;</td>
+            <td>@dec_table13_row720_v643c3;</td>
+            <td>@dec_table13_row720_v643c4;</td>
+            <td>@dec_table13_row720_v643c5;</td>
+            <td>@dec_table13_row720_v643c6;</td>
+            <td>@dec_table13_row720_v643c7;</td>
+            <td>@dec_table13_row720_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row720_v999c1;</td>
+            <td>@dec_table13_row720_v999c2;</td>
+            <td>@dec_table13_row720_v999c3;</td>
+            <td>@dec_table13_row720_v999c4;</td>
+            <td>@dec_table13_row720_v999c5;</td>
+            <td>@dec_table13_row720_v999c6;</td>
+            <td>@dec_table13_row720_v999c7;</td>
+            <td>@dec_table13_row720_v999c8;</td>
+        </tr>
+
+        <!-- Row 721 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">721</p>
+            </td>
+            <td>@dec_table13_row721_totalc1;</td>
+            <td>@dec_table13_row721_totalc2;</td>
+            <td>@dec_table13_row721_totalc3;</td>
+            <td>@dec_table13_row721_totalc4;</td>
+            <td>@dec_table13_row721_totalc5;</td>
+            <td>@dec_table13_row721_totalc6;</td>
+            <td>@dec_table13_row721_totalc7;</td>
+            <td>@dec_table13_row721_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row721_v978c1;</td>
+            <td>@dec_table13_row721_v978c2;</td>
+            <td>@dec_table13_row721_v978c3;</td>
+            <td>@dec_table13_row721_v978c4;</td>
+            <td>@dec_table13_row721_v978c5;</td>
+            <td>@dec_table13_row721_v978c6;</td>
+            <td>@dec_table13_row721_v978c7;</td>
+            <td>@dec_table13_row721_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row721_v840c1;</td>
+            <td>@dec_table13_row721_v840c2;</td>
+            <td>@dec_table13_row721_v840c3;</td>
+            <td>@dec_table13_row721_v840c4;</td>
+            <td>@dec_table13_row721_v840c5;</td>
+            <td>@dec_table13_row721_v840c6;</td>
+            <td>@dec_table13_row721_v840c7;</td>
+            <td>@dec_table13_row721_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row721_v642c1;</td>
+            <td>@dec_table13_row721_v642c2;</td>
+            <td>@dec_table13_row721_v642c3;</td>
+            <td>@dec_table13_row721_v642c4;</td>
+            <td>@dec_table13_row721_v642c5;</td>
+            <td>@dec_table13_row721_v642c6;</td>
+            <td>@dec_table13_row721_v642c7;</td>
+            <td>@dec_table13_row721_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row721_v643c1;</td>
+            <td>@dec_table13_row721_v643c2;</td>
+            <td>@dec_table13_row721_v643c3;</td>
+            <td>@dec_table13_row721_v643c4;</td>
+            <td>@dec_table13_row721_v643c5;</td>
+            <td>@dec_table13_row721_v643c6;</td>
+            <td>@dec_table13_row721_v643c7;</td>
+            <td>@dec_table13_row721_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row721_v999c1;</td>
+            <td>@dec_table13_row721_v999c2;</td>
+            <td>@dec_table13_row721_v999c3;</td>
+            <td>@dec_table13_row721_v999c4;</td>
+            <td>@dec_table13_row721_v999c5;</td>
+            <td>@dec_table13_row721_v999c6;</td>
+            <td>@dec_table13_row721_v999c7;</td>
+            <td>@dec_table13_row721_v999c8;</td>
+        </tr>
+
+        <!-- Row 730 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Împrumuturi acordate și creanțe privind leasingul financiar curente – total"]:
+                </p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">730</p>
+            </td>
+            <td>@dec_table13_row730_totalc1;</td>
+            <td>@dec_table13_row730_totalc2;</td>
+            <td>@dec_table13_row730_totalc3;</td>
+            <td>@dec_table13_row730_totalc4;</td>
+            <td>@dec_table13_row730_totalc5;</td>
+            <td>@dec_table13_row730_totalc6;</td>
+            <td>@dec_table13_row730_totalc7;</td>
+            <td>@dec_table13_row730_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row730_v978c1;</td>
+            <td>@dec_table13_row730_v978c2;</td>
+            <td>@dec_table13_row730_v978c3;</td>
+            <td>@dec_table13_row730_v978c4;</td>
+            <td>@dec_table13_row730_v978c5;</td>
+            <td>@dec_table13_row730_v978c6;</td>
+            <td>@dec_table13_row730_v978c7;</td>
+            <td>@dec_table13_row730_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row730_v840c1;</td>
+            <td>@dec_table13_row730_v840c2;</td>
+            <td>@dec_table13_row730_v840c3;</td>
+            <td>@dec_table13_row730_v840c4;</td>
+            <td>@dec_table13_row730_v840c5;</td>
+            <td>@dec_table13_row730_v840c6;</td>
+            <td>@dec_table13_row730_v840c7;</td>
+            <td>@dec_table13_row730_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row730_v642c1;</td>
+            <td>@dec_table13_row730_v642c2;</td>
+            <td>@dec_table13_row730_v642c3;</td>
+            <td>@dec_table13_row730_v642c4;</td>
+            <td>@dec_table13_row730_v642c5;</td>
+            <td>@dec_table13_row730_v642c6;</td>
+            <td>@dec_table13_row730_v642c7;</td>
+            <td>@dec_table13_row730_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row730_v643c1;</td>
+            <td>@dec_table13_row730_v643c2;</td>
+            <td>@dec_table13_row730_v643c3;</td>
+            <td>@dec_table13_row730_v643c4;</td>
+            <td>@dec_table13_row730_v643c5;</td>
+            <td>@dec_table13_row730_v643c6;</td>
+            <td>@dec_table13_row730_v643c7;</td>
+            <td>@dec_table13_row730_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row730_v999c1;</td>
+            <td>@dec_table13_row730_v999c2;</td>
+            <td>@dec_table13_row730_v999c3;</td>
+            <td>@dec_table13_row730_v999c4;</td>
+            <td>@dec_table13_row730_v999c5;</td>
+            <td>@dec_table13_row730_v999c6;</td>
+            <td>@dec_table13_row730_v999c7;</td>
+            <td>@dec_table13_row730_v999c8;</td>
+        </tr>
+
+        <!-- Row 731 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">731</p>
+            </td>
+            <td>@dec_table13_row731_totalc1;</td>
+            <td>@dec_table13_row731_totalc2;</td>
+            <td>@dec_table13_row731_totalc3;</td>
+            <td>@dec_table13_row731_totalc4;</td>
+            <td>@dec_table13_row731_totalc5;</td>
+            <td>@dec_table13_row731_totalc6;</td>
+            <td>@dec_table13_row731_totalc7;</td>
+            <td>@dec_table13_row731_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row731_v978c1;</td>
+            <td>@dec_table13_row731_v978c2;</td>
+            <td>@dec_table13_row731_v978c3;</td>
+            <td>@dec_table13_row731_v978c4;</td>
+            <td>@dec_table13_row731_v978c5;</td>
+            <td>@dec_table13_row731_v978c6;</td>
+            <td>@dec_table13_row731_v978c7;</td>
+            <td>@dec_table13_row731_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row731_v840c1;</td>
+            <td>@dec_table13_row731_v840c2;</td>
+            <td>@dec_table13_row731_v840c3;</td>
+            <td>@dec_table13_row731_v840c4;</td>
+            <td>@dec_table13_row731_v840c5;</td>
+            <td>@dec_table13_row731_v840c6;</td>
+            <td>@dec_table13_row731_v840c7;</td>
+            <td>@dec_table13_row731_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row731_v642c1;</td>
+            <td>@dec_table13_row731_v642c2;</td>
+            <td>@dec_table13_row731_v642c3;</td>
+            <td>@dec_table13_row731_v642c4;</td>
+            <td>@dec_table13_row731_v642c5;</td>
+            <td>@dec_table13_row731_v642c6;</td>
+            <td>@dec_table13_row731_v642c7;</td>
+            <td>@dec_table13_row731_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row731_v643c1;</td>
+            <td>@dec_table13_row731_v643c2;</td>
+            <td>@dec_table13_row731_v643c3;</td>
+            <td>@dec_table13_row731_v643c4;</td>
+            <td>@dec_table13_row731_v643c5;</td>
+            <td>@dec_table13_row731_v643c6;</td>
+            <td>@dec_table13_row731_v643c7;</td>
+            <td>@dec_table13_row731_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row731_v999c1;</td>
+            <td>@dec_table13_row731_v999c2;</td>
+            <td>@dec_table13_row731_v999c3;</td>
+            <td>@dec_table13_row731_v999c4;</td>
+            <td>@dec_table13_row731_v999c5;</td>
+            <td>@dec_table13_row731_v999c6;</td>
+            <td>@dec_table13_row731_v999c7;</td>
+            <td>@dec_table13_row731_v999c8;</td>
+        </tr>
+
+        <!-- Row 740 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Depozite curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">740</p>
+            </td>
+            <td>@dec_table13_row740_totalc1;</td>
+            <td>@dec_table13_row740_totalc2;</td>
+            <td>@dec_table13_row740_totalc3;</td>
+            <td>@dec_table13_row740_totalc4;</td>
+            <td>@dec_table13_row740_totalc5;</td>
+            <td>@dec_table13_row740_totalc6;</td>
+            <td>@dec_table13_row740_totalc7;</td>
+            <td>@dec_table13_row740_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row740_v978c1;</td>
+            <td>@dec_table13_row740_v978c2;</td>
+            <td>@dec_table13_row740_v978c3;</td>
+            <td>@dec_table13_row740_v978c4;</td>
+            <td>@dec_table13_row740_v978c5;</td>
+            <td>@dec_table13_row740_v978c6;</td>
+            <td>@dec_table13_row740_v978c7;</td>
+            <td>@dec_table13_row740_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row740_v840c1;</td>
+            <td>@dec_table13_row740_v840c2;</td>
+            <td>@dec_table13_row740_v840c3;</td>
+            <td>@dec_table13_row740_v840c4;</td>
+            <td>@dec_table13_row740_v840c5;</td>
+            <td>@dec_table13_row740_v840c6;</td>
+            <td>@dec_table13_row740_v840c7;</td>
+            <td>@dec_table13_row740_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row740_v642c1;</td>
+            <td>@dec_table13_row740_v642c2;</td>
+            <td>@dec_table13_row740_v642c3;</td>
+            <td>@dec_table13_row740_v642c4;</td>
+            <td>@dec_table13_row740_v642c5;</td>
+            <td>@dec_table13_row740_v642c6;</td>
+            <td>@dec_table13_row740_v642c7;</td>
+            <td>@dec_table13_row740_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row740_v643c1;</td>
+            <td>@dec_table13_row740_v643c2;</td>
+            <td>@dec_table13_row740_v643c3;</td>
+            <td>@dec_table13_row740_v643c4;</td>
+            <td>@dec_table13_row740_v643c5;</td>
+            <td>@dec_table13_row740_v643c6;</td>
+            <td>@dec_table13_row740_v643c7;</td>
+            <td>@dec_table13_row740_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row740_v999c1;</td>
+            <td>@dec_table13_row740_v999c2;</td>
+            <td>@dec_table13_row740_v999c3;</td>
+            <td>@dec_table13_row740_v999c4;</td>
+            <td>@dec_table13_row740_v999c5;</td>
+            <td>@dec_table13_row740_v999c6;</td>
+            <td>@dec_table13_row740_v999c7;</td>
+            <td>@dec_table13_row740_v999c8;</td>
+        </tr>
+
+        <!-- Row 741 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">741</p>
+            </td>
+            <td>@dec_table13_row741_totalc1;</td>
+            <td>@dec_table13_row741_totalc2;</td>
+            <td>@dec_table13_row741_totalc3;</td>
+            <td>@dec_table13_row741_totalc4;</td>
+            <td>@dec_table13_row741_totalc5;</td>
+            <td>@dec_table13_row741_totalc6;</td>
+            <td>@dec_table13_row741_totalc7;</td>
+            <td>@dec_table13_row741_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row741_v978c1;</td>
+            <td>@dec_table13_row741_v978c2;</td>
+            <td>@dec_table13_row741_v978c3;</td>
+            <td>@dec_table13_row741_v978c4;</td>
+            <td>@dec_table13_row741_v978c5;</td>
+            <td>@dec_table13_row741_v978c6;</td>
+            <td>@dec_table13_row741_v978c7;</td>
+            <td>@dec_table13_row741_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row741_v840c1;</td>
+            <td>@dec_table13_row741_v840c2;</td>
+            <td>@dec_table13_row741_v840c3;</td>
+            <td>@dec_table13_row741_v840c4;</td>
+            <td>@dec_table13_row741_v840c5;</td>
+            <td>@dec_table13_row741_v840c6;</td>
+            <td>@dec_table13_row741_v840c7;</td>
+            <td>@dec_table13_row741_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row741_v642c1;</td>
+            <td>@dec_table13_row741_v642c2;</td>
+            <td>@dec_table13_row741_v642c3;</td>
+            <td>@dec_table13_row741_v642c4;</td>
+            <td>@dec_table13_row741_v642c5;</td>
+            <td>@dec_table13_row741_v642c6;</td>
+            <td>@dec_table13_row741_v642c7;</td>
+            <td>@dec_table13_row741_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row741_v643c1;</td>
+            <td>@dec_table13_row741_v643c2;</td>
+            <td>@dec_table13_row741_v643c3;</td>
+            <td>@dec_table13_row741_v643c4;</td>
+            <td>@dec_table13_row741_v643c5;</td>
+            <td>@dec_table13_row741_v643c6;</td>
+            <td>@dec_table13_row741_v643c7;</td>
+            <td>@dec_table13_row741_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row741_v999c1;</td>
+            <td>@dec_table13_row741_v999c2;</td>
+            <td>@dec_table13_row741_v999c3;</td>
+            <td>@dec_table13_row741_v999c4;</td>
+            <td>@dec_table13_row741_v999c5;</td>
+            <td>@dec_table13_row741_v999c6;</td>
+            <td>@dec_table13_row741_v999c7;</td>
+            <td>@dec_table13_row741_v999c8;</td>
+        </tr>
+
+        <!-- Row 750 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Alte creanțe și investiții financiare curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">750</p>
+            </td>
+            <td>@dec_table13_row750_totalc1;</td>
+            <td>@dec_table13_row750_totalc2;</td>
+            <td>@dec_table13_row750_totalc3;</td>
+            <td>@dec_table13_row750_totalc4;</td>
+            <td>@dec_table13_row750_totalc5;</td>
+            <td>@dec_table13_row750_totalc6;</td>
+            <td>@dec_table13_row750_totalc7;</td>
+            <td>@dec_table13_row750_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row750_v978c1;</td>
+            <td>@dec_table13_row750_v978c2;</td>
+            <td>@dec_table13_row750_v978c3;</td>
+            <td>@dec_table13_row750_v978c4;</td>
+            <td>@dec_table13_row750_v978c5;</td>
+            <td>@dec_table13_row750_v978c6;</td>
+            <td>@dec_table13_row750_v978c7;</td>
+            <td>@dec_table13_row750_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row750_v840c1;</td>
+            <td>@dec_table13_row750_v840c2;</td>
+            <td>@dec_table13_row750_v840c3;</td>
+            <td>@dec_table13_row750_v840c4;</td>
+            <td>@dec_table13_row750_v840c5;</td>
+            <td>@dec_table13_row750_v840c6;</td>
+            <td>@dec_table13_row750_v840c7;</td>
+            <td>@dec_table13_row750_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row750_v642c1;</td>
+            <td>@dec_table13_row750_v642c2;</td>
+            <td>@dec_table13_row750_v642c3;</td>
+            <td>@dec_table13_row750_v642c4;</td>
+            <td>@dec_table13_row750_v642c5;</td>
+            <td>@dec_table13_row750_v642c6;</td>
+            <td>@dec_table13_row750_v642c7;</td>
+            <td>@dec_table13_row750_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row750_v643c1;</td>
+            <td>@dec_table13_row750_v643c2;</td>
+            <td>@dec_table13_row750_v643c3;</td>
+            <td>@dec_table13_row750_v643c4;</td>
+            <td>@dec_table13_row750_v643c5;</td>
+            <td>@dec_table13_row750_v643c6;</td>
+            <td>@dec_table13_row750_v643c7;</td>
+            <td>@dec_table13_row750_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row750_v999c1;</td>
+            <td>@dec_table13_row750_v999c2;</td>
+            <td>@dec_table13_row750_v999c3;</td>
+            <td>@dec_table13_row750_v999c4;</td>
+            <td>@dec_table13_row750_v999c5;</td>
+            <td>@dec_table13_row750_v999c6;</td>
+            <td>@dec_table13_row750_v999c7;</td>
+            <td>@dec_table13_row750_v999c8;</td>
+        </tr>
+
+        <!-- Row 751 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">751</p>
+            </td>
+            <td>@dec_table13_row751_totalc1;</td>
+            <td>@dec_table13_row751_totalc2;</td>
+            <td>@dec_table13_row751_totalc3;</td>
+            <td>@dec_table13_row751_totalc4;</td>
+            <td>@dec_table13_row751_totalc5;</td>
+            <td>@dec_table13_row751_totalc6;</td>
+            <td>@dec_table13_row751_totalc7;</td>
+            <td>@dec_table13_row751_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row751_v978c1;</td>
+            <td>@dec_table13_row751_v978c2;</td>
+            <td>@dec_table13_row751_v978c3;</td>
+            <td>@dec_table13_row751_v978c4;</td>
+            <td>@dec_table13_row751_v978c5;</td>
+            <td>@dec_table13_row751_v978c6;</td>
+            <td>@dec_table13_row751_v978c7;</td>
+            <td>@dec_table13_row751_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row751_v840c1;</td>
+            <td>@dec_table13_row751_v840c2;</td>
+            <td>@dec_table13_row751_v840c3;</td>
+            <td>@dec_table13_row751_v840c4;</td>
+            <td>@dec_table13_row751_v840c5;</td>
+            <td>@dec_table13_row751_v840c6;</td>
+            <td>@dec_table13_row751_v840c7;</td>
+            <td>@dec_table13_row751_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row751_v642c1;</td>
+            <td>@dec_table13_row751_v642c2;</td>
+            <td>@dec_table13_row751_v642c3;</td>
+            <td>@dec_table13_row751_v642c4;</td>
+            <td>@dec_table13_row751_v642c5;</td>
+            <td>@dec_table13_row751_v642c6;</td>
+            <td>@dec_table13_row751_v642c7;</td>
+            <td>@dec_table13_row751_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row751_v643c1;</td>
+            <td>@dec_table13_row751_v643c2;</td>
+            <td>@dec_table13_row751_v643c3;</td>
+            <td>@dec_table13_row751_v643c4;</td>
+            <td>@dec_table13_row751_v643c5;</td>
+            <td>@dec_table13_row751_v643c6;</td>
+            <td>@dec_table13_row751_v643c7;</td>
+            <td>@dec_table13_row751_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row751_v999c1;</td>
+            <td>@dec_table13_row751_v999c2;</td>
+            <td>@dec_table13_row751_v999c3;</td>
+            <td>@dec_table13_row751_v999c4;</td>
+            <td>@dec_table13_row751_v999c5;</td>
+            <td>@dec_table13_row751_v999c6;</td>
+            <td>@dec_table13_row751_v999c7;</td>
+            <td>@dec_table13_row751_v999c8;</td>
+        </tr>
+
+        <!-- Row 760 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Datorii curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">760</p>
+            </td>
+            <td>@dec_table13_row760_totalc1;</td>
+            <td>@dec_table13_row760_totalc2;</td>
+            <td>@dec_table13_row760_totalc3;</td>
+            <td>@dec_table13_row760_totalc4;</td>
+            <td>@dec_table13_row760_totalc5;</td>
+            <td>@dec_table13_row760_totalc6;</td>
+            <td>@dec_table13_row760_totalc7;</td>
+            <td>@dec_table13_row760_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row760_v978c1;</td>
+            <td>@dec_table13_row760_v978c2;</td>
+            <td>@dec_table13_row760_v978c3;</td>
+            <td>@dec_table13_row760_v978c4;</td>
+            <td>@dec_table13_row760_v978c5;</td>
+            <td>@dec_table13_row760_v978c6;</td>
+            <td>@dec_table13_row760_v978c7;</td>
+            <td>@dec_table13_row760_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row760_v840c1;</td>
+            <td>@dec_table13_row760_v840c2;</td>
+            <td>@dec_table13_row760_v840c3;</td>
+            <td>@dec_table13_row760_v840c4;</td>
+            <td>@dec_table13_row760_v840c5;</td>
+            <td>@dec_table13_row760_v840c6;</td>
+            <td>@dec_table13_row760_v840c7;</td>
+            <td>@dec_table13_row760_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row760_v642c1;</td>
+            <td>@dec_table13_row760_v642c2;</td>
+            <td>@dec_table13_row760_v642c3;</td>
+            <td>@dec_table13_row760_v642c4;</td>
+            <td>@dec_table13_row760_v642c5;</td>
+            <td>@dec_table13_row760_v642c6;</td>
+            <td>@dec_table13_row760_v642c7;</td>
+            <td>@dec_table13_row760_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row760_v643c1;</td>
+            <td>@dec_table13_row760_v643c2;</td>
+            <td>@dec_table13_row760_v643c3;</td>
+            <td>@dec_table13_row760_v643c4;</td>
+            <td>@dec_table13_row760_v643c5;</td>
+            <td>@dec_table13_row760_v643c6;</td>
+            <td>@dec_table13_row760_v643c7;</td>
+            <td>@dec_table13_row760_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row760_v999c1;</td>
+            <td>@dec_table13_row760_v999c2;</td>
+            <td>@dec_table13_row760_v999c3;</td>
+            <td>@dec_table13_row760_v999c4;</td>
+            <td>@dec_table13_row760_v999c5;</td>
+            <td>@dec_table13_row760_v999c6;</td>
+            <td>@dec_table13_row760_v999c7;</td>
+            <td>@dec_table13_row760_v999c8;</td>
+        </tr>
+
+        <!-- Row 761 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">761</p>
+            </td>
+            <td>@dec_table13_row761_totalc1;</td>
+            <td>@dec_table13_row761_totalc2;</td>
+            <td>@dec_table13_row761_totalc3;</td>
+            <td>@dec_table13_row761_totalc4;</td>
+            <td>@dec_table13_row761_totalc5;</td>
+            <td>@dec_table13_row761_totalc6;</td>
+            <td>@dec_table13_row761_totalc7;</td>
+            <td>@dec_table13_row761_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row761_v978c1;</td>
+            <td>@dec_table13_row761_v978c2;</td>
+            <td>@dec_table13_row761_v978c3;</td>
+            <td>@dec_table13_row761_v978c4;</td>
+            <td>@dec_table13_row761_v978c5;</td>
+            <td>@dec_table13_row761_v978c6;</td>
+            <td>@dec_table13_row761_v978c7;</td>
+            <td>@dec_table13_row761_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row761_v840c1;</td>
+            <td>@dec_table13_row761_v840c2;</td>
+            <td>@dec_table13_row761_v840c3;</td>
+            <td>@dec_table13_row761_v840c4;</td>
+            <td>@dec_table13_row761_v840c5;</td>
+            <td>@dec_table13_row761_v840c6;</td>
+            <td>@dec_table13_row761_v840c7;</td>
+            <td>@dec_table13_row761_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row761_v642c1;</td>
+            <td>@dec_table13_row761_v642c2;</td>
+            <td>@dec_table13_row761_v642c3;</td>
+            <td>@dec_table13_row761_v642c4;</td>
+            <td>@dec_table13_row761_v642c5;</td>
+            <td>@dec_table13_row761_v642c6;</td>
+            <td>@dec_table13_row761_v642c7;</td>
+            <td>@dec_table13_row761_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row761_v643c1;</td>
+            <td>@dec_table13_row761_v643c2;</td>
+            <td>@dec_table13_row761_v643c3;</td>
+            <td>@dec_table13_row761_v643c4;</td>
+            <td>@dec_table13_row761_v643c5;</td>
+            <td>@dec_table13_row761_v643c6;</td>
+            <td>@dec_table13_row761_v643c7;</td>
+            <td>@dec_table13_row761_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row761_v999c1;</td>
+            <td>@dec_table13_row761_v999c2;</td>
+            <td>@dec_table13_row761_v999c3;</td>
+            <td>@dec_table13_row761_v999c4;</td>
+            <td>@dec_table13_row761_v999c5;</td>
+            <td>@dec_table13_row761_v999c6;</td>
+            <td>@dec_table13_row761_v999c7;</td>
+            <td>@dec_table13_row761_v999c8;</td>
+        </tr>
+
+        <!-- Row 770 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Datorii comerciale curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">770</p>
+            </td>
+            <td>@dec_table13_row770_totalc1;</td>
+            <td>@dec_table13_row770_totalc2;</td>
+            <td>@dec_table13_row770_totalc3;</td>
+            <td>@dec_table13_row770_totalc4;</td>
+            <td>@dec_table13_row770_totalc5;</td>
+            <td>@dec_table13_row770_totalc6;</td>
+            <td>@dec_table13_row770_totalc7;</td>
+            <td>@dec_table13_row770_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row770_v978c1;</td>
+            <td>@dec_table13_row770_v978c2;</td>
+            <td>@dec_table13_row770_v978c3;</td>
+            <td>@dec_table13_row770_v978c4;</td>
+            <td>@dec_table13_row770_v978c5;</td>
+            <td>@dec_table13_row770_v978c6;</td>
+            <td>@dec_table13_row770_v978c7;</td>
+            <td>@dec_table13_row770_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row770_v840c1;</td>
+            <td>@dec_table13_row770_v840c2;</td>
+            <td>@dec_table13_row770_v840c3;</td>
+            <td>@dec_table13_row770_v840c4;</td>
+            <td>@dec_table13_row770_v840c5;</td>
+            <td>@dec_table13_row770_v840c6;</td>
+            <td>@dec_table13_row770_v840c7;</td>
+            <td>@dec_table13_row770_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row770_v642c1;</td>
+            <td>@dec_table13_row770_v642c2;</td>
+            <td>@dec_table13_row770_v642c3;</td>
+            <td>@dec_table13_row770_v642c4;</td>
+            <td>@dec_table13_row770_v642c5;</td>
+            <td>@dec_table13_row770_v642c6;</td>
+            <td>@dec_table13_row770_v642c7;</td>
+            <td>@dec_table13_row770_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row770_v643c1;</td>
+            <td>@dec_table13_row770_v643c2;</td>
+            <td>@dec_table13_row770_v643c3;</td>
+            <td>@dec_table13_row770_v643c4;</td>
+            <td>@dec_table13_row770_v643c5;</td>
+            <td>@dec_table13_row770_v643c6;</td>
+            <td>@dec_table13_row770_v643c7;</td>
+            <td>@dec_table13_row770_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row770_v999c1;</td>
+            <td>@dec_table13_row770_v999c2;</td>
+            <td>@dec_table13_row770_v999c3;</td>
+            <td>@dec_table13_row770_v999c4;</td>
+            <td>@dec_table13_row770_v999c5;</td>
+            <td>@dec_table13_row770_v999c6;</td>
+            <td>@dec_table13_row770_v999c7;</td>
+            <td>@dec_table13_row770_v999c8;</td>
+        </tr>
+
+        <!-- Row 771 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">771</p>
+            </td>
+            <td>@dec_table13_row771_totalc1;</td>
+            <td>@dec_table13_row771_totalc2;</td>
+            <td>@dec_table13_row771_totalc3;</td>
+            <td>@dec_table13_row771_totalc4;</td>
+            <td>@dec_table13_row771_totalc5;</td>
+            <td>@dec_table13_row771_totalc6;</td>
+            <td>@dec_table13_row771_totalc7;</td>
+            <td>@dec_table13_row771_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row771_v978c1;</td>
+            <td>@dec_table13_row771_v978c2;</td>
+            <td>@dec_table13_row771_v978c3;</td>
+            <td>@dec_table13_row771_v978c4;</td>
+            <td>@dec_table13_row771_v978c5;</td>
+            <td>@dec_table13_row771_v978c6;</td>
+            <td>@dec_table13_row771_v978c7;</td>
+            <td>@dec_table13_row771_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row771_v840c1;</td>
+            <td>@dec_table13_row771_v840c2;</td>
+            <td>@dec_table13_row771_v840c3;</td>
+            <td>@dec_table13_row771_v840c4;</td>
+            <td>@dec_table13_row771_v840c5;</td>
+            <td>@dec_table13_row771_v840c6;</td>
+            <td>@dec_table13_row771_v840c7;</td>
+            <td>@dec_table13_row771_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row771_v642c1;</td>
+            <td>@dec_table13_row771_v642c2;</td>
+            <td>@dec_table13_row771_v642c3;</td>
+            <td>@dec_table13_row771_v642c4;</td>
+            <td>@dec_table13_row771_v642c5;</td>
+            <td>@dec_table13_row771_v642c6;</td>
+            <td>@dec_table13_row771_v642c7;</td>
+            <td>@dec_table13_row771_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row771_v643c1;</td>
+            <td>@dec_table13_row771_v643c2;</td>
+            <td>@dec_table13_row771_v643c3;</td>
+            <td>@dec_table13_row771_v643c4;</td>
+            <td>@dec_table13_row771_v643c5;</td>
+            <td>@dec_table13_row771_v643c6;</td>
+            <td>@dec_table13_row771_v643c7;</td>
+            <td>@dec_table13_row771_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row771_v999c1;</td>
+            <td>@dec_table13_row771_v999c2;</td>
+            <td>@dec_table13_row771_v999c3;</td>
+            <td>@dec_table13_row771_v999c4;</td>
+            <td>@dec_table13_row771_v999c5;</td>
+            <td>@dec_table13_row771_v999c6;</td>
+            <td>@dec_table13_row771_v999c7;</td>
+            <td>@dec_table13_row771_v999c8;</td>
+        </tr>
+
+        <!-- Row 780 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Avansuri primite curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">780</p>
+            </td>
+            <td>@dec_table13_row780_totalc1;</td>
+            <td>@dec_table13_row780_totalc2;</td>
+            <td>@dec_table13_row780_totalc3;</td>
+            <td>@dec_table13_row780_totalc4;</td>
+            <td>@dec_table13_row780_totalc5;</td>
+            <td>@dec_table13_row780_totalc6;</td>
+            <td>@dec_table13_row780_totalc7;</td>
+            <td>@dec_table13_row780_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row780_v978c1;</td>
+            <td>@dec_table13_row780_v978c2;</td>
+            <td>@dec_table13_row780_v978c3;</td>
+            <td>@dec_table13_row780_v978c4;</td>
+            <td>@dec_table13_row780_v978c5;</td>
+            <td>@dec_table13_row780_v978c6;</td>
+            <td>@dec_table13_row780_v978c7;</td>
+            <td>@dec_table13_row780_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row780_v840c1;</td>
+            <td>@dec_table13_row780_v840c2;</td>
+            <td>@dec_table13_row780_v840c3;</td>
+            <td>@dec_table13_row780_v840c4;</td>
+            <td>@dec_table13_row780_v840c5;</td>
+            <td>@dec_table13_row780_v840c6;</td>
+            <td>@dec_table13_row780_v840c7;</td>
+            <td>@dec_table13_row780_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row780_v642c1;</td>
+            <td>@dec_table13_row780_v642c2;</td>
+            <td>@dec_table13_row780_v642c3;</td>
+            <td>@dec_table13_row780_v642c4;</td>
+            <td>@dec_table13_row780_v642c5;</td>
+            <td>@dec_table13_row780_v642c6;</td>
+            <td>@dec_table13_row780_v642c7;</td>
+            <td>@dec_table13_row780_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row780_v643c1;</td>
+            <td>@dec_table13_row780_v643c2;</td>
+            <td>@dec_table13_row780_v643c3;</td>
+            <td>@dec_table13_row780_v643c4;</td>
+            <td>@dec_table13_row780_v643c5;</td>
+            <td>@dec_table13_row780_v643c6;</td>
+            <td>@dec_table13_row780_v643c7;</td>
+            <td>@dec_table13_row780_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row780_v999c1;</td>
+            <td>@dec_table13_row780_v999c2;</td>
+            <td>@dec_table13_row780_v999c3;</td>
+            <td>@dec_table13_row780_v999c4;</td>
+            <td>@dec_table13_row780_v999c5;</td>
+            <td>@dec_table13_row780_v999c6;</td>
+            <td>@dec_table13_row780_v999c7;</td>
+            <td>@dec_table13_row780_v999c8;</td>
+        </tr>
+
+        <!-- Row 781 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">781</p>
+            </td>
+            <td>@dec_table13_row781_totalc1;</td>
+            <td>@dec_table13_row781_totalc2;</td>
+            <td>@dec_table13_row781_totalc3;</td>
+            <td>@dec_table13_row781_totalc4;</td>
+            <td>@dec_table13_row781_totalc5;</td>
+            <td>@dec_table13_row781_totalc6;</td>
+            <td>@dec_table13_row781_totalc7;</td>
+            <td>@dec_table13_row781_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row781_v978c1;</td>
+            <td>@dec_table13_row781_v978c2;</td>
+            <td>@dec_table13_row781_v978c3;</td>
+            <td>@dec_table13_row781_v978c4;</td>
+            <td>@dec_table13_row781_v978c5;</td>
+            <td>@dec_table13_row781_v978c6;</td>
+            <td>@dec_table13_row781_v978c7;</td>
+            <td>@dec_table13_row781_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row781_v840c1;</td>
+            <td>@dec_table13_row781_v840c2;</td>
+            <td>@dec_table13_row781_v840c3;</td>
+            <td>@dec_table13_row781_v840c4;</td>
+            <td>@dec_table13_row781_v840c5;</td>
+            <td>@dec_table13_row781_v840c6;</td>
+            <td>@dec_table13_row781_v840c7;</td>
+            <td>@dec_table13_row781_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row781_v642c1;</td>
+            <td>@dec_table13_row781_v642c2;</td>
+            <td>@dec_table13_row781_v642c3;</td>
+            <td>@dec_table13_row781_v642c4;</td>
+            <td>@dec_table13_row781_v642c5;</td>
+            <td>@dec_table13_row781_v642c6;</td>
+            <td>@dec_table13_row781_v642c7;</td>
+            <td>@dec_table13_row781_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row781_v643c1;</td>
+            <td>@dec_table13_row781_v643c2;</td>
+            <td>@dec_table13_row781_v643c3;</td>
+            <td>@dec_table13_row781_v643c4;</td>
+            <td>@dec_table13_row781_v643c5;</td>
+            <td>@dec_table13_row781_v643c6;</td>
+            <td>@dec_table13_row781_v643c7;</td>
+            <td>@dec_table13_row781_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row781_v999c1;</td>
+            <td>@dec_table13_row781_v999c2;</td>
+            <td>@dec_table13_row781_v999c3;</td>
+            <td>@dec_table13_row781_v999c4;</td>
+            <td>@dec_table13_row781_v999c5;</td>
+            <td>@dec_table13_row781_v999c6;</td>
+            <td>@dec_table13_row781_v999c7;</td>
+            <td>@dec_table13_row781_v999c8;</td>
+        </tr>
+
+        <!-- Row 790 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Credite bancare, împrumuturi și datorii privind leasingul financiar curente –
+                    total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">790</p>
+            </td>
+            <td>@dec_table13_row790_totalc1;</td>
+            <td>@dec_table13_row790_totalc2;</td>
+            <td>@dec_table13_row790_totalc3;</td>
+            <td>@dec_table13_row790_totalc4;</td>
+            <td>@dec_table13_row790_totalc5;</td>
+            <td>@dec_table13_row790_totalc6;</td>
+            <td>@dec_table13_row790_totalc7;</td>
+            <td>@dec_table13_row790_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row790_v978c1;</td>
+            <td>@dec_table13_row790_v978c2;</td>
+            <td>@dec_table13_row790_v978c3;</td>
+            <td>@dec_table13_row790_v978c4;</td>
+            <td>@dec_table13_row790_v978c5;</td>
+            <td>@dec_table13_row790_v978c6;</td>
+            <td>@dec_table13_row790_v978c7;</td>
+            <td>@dec_table13_row790_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row790_v840c1;</td>
+            <td>@dec_table13_row790_v840c2;</td>
+            <td>@dec_table13_row790_v840c3;</td>
+            <td>@dec_table13_row790_v840c4;</td>
+            <td>@dec_table13_row790_v840c5;</td>
+            <td>@dec_table13_row790_v840c6;</td>
+            <td>@dec_table13_row790_v840c7;</td>
+            <td>@dec_table13_row790_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row790_v642c1;</td>
+            <td>@dec_table13_row790_v642c2;</td>
+            <td>@dec_table13_row790_v642c3;</td>
+            <td>@dec_table13_row790_v642c4;</td>
+            <td>@dec_table13_row790_v642c5;</td>
+            <td>@dec_table13_row790_v642c6;</td>
+            <td>@dec_table13_row790_v642c7;</td>
+            <td>@dec_table13_row790_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row790_v643c1;</td>
+            <td>@dec_table13_row790_v643c2;</td>
+            <td>@dec_table13_row790_v643c3;</td>
+            <td>@dec_table13_row790_v643c4;</td>
+            <td>@dec_table13_row790_v643c5;</td>
+            <td>@dec_table13_row790_v643c6;</td>
+            <td>@dec_table13_row790_v643c7;</td>
+            <td>@dec_table13_row790_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row790_v999c1;</td>
+            <td>@dec_table13_row790_v999c2;</td>
+            <td>@dec_table13_row790_v999c3;</td>
+            <td>@dec_table13_row790_v999c4;</td>
+            <td>@dec_table13_row790_v999c5;</td>
+            <td>@dec_table13_row790_v999c6;</td>
+            <td>@dec_table13_row790_v999c7;</td>
+            <td>@dec_table13_row790_v999c8;</td>
+        </tr>
+
+        <!-- Row 791 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">791</p>
+            </td>
+            <td>@dec_table13_row791_totalc1;</td>
+            <td>@dec_table13_row791_totalc2;</td>
+            <td>@dec_table13_row791_totalc3;</td>
+            <td>@dec_table13_row791_totalc4;</td>
+            <td>@dec_table13_row791_totalc5;</td>
+            <td>@dec_table13_row791_totalc6;</td>
+            <td>@dec_table13_row791_totalc7;</td>
+            <td>@dec_table13_row791_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row791_v978c1;</td>
+            <td>@dec_table13_row791_v978c2;</td>
+            <td>@dec_table13_row791_v978c3;</td>
+            <td>@dec_table13_row791_v978c4;</td>
+            <td>@dec_table13_row791_v978c5;</td>
+            <td>@dec_table13_row791_v978c6;</td>
+            <td>@dec_table13_row791_v978c7;</td>
+            <td>@dec_table13_row791_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row791_v840c1;</td>
+            <td>@dec_table13_row791_v840c2;</td>
+            <td>@dec_table13_row791_v840c3;</td>
+            <td>@dec_table13_row791_v840c4;</td>
+            <td>@dec_table13_row791_v840c5;</td>
+            <td>@dec_table13_row791_v840c6;</td>
+            <td>@dec_table13_row791_v840c7;</td>
+            <td>@dec_table13_row791_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row791_v642c1;</td>
+            <td>@dec_table13_row791_v642c2;</td>
+            <td>@dec_table13_row791_v642c3;</td>
+            <td>@dec_table13_row791_v642c4;</td>
+            <td>@dec_table13_row791_v642c5;</td>
+            <td>@dec_table13_row791_v642c6;</td>
+            <td>@dec_table13_row791_v642c7;</td>
+            <td>@dec_table13_row791_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row791_v643c1;</td>
+            <td>@dec_table13_row791_v643c2;</td>
+            <td>@dec_table13_row791_v643c3;</td>
+            <td>@dec_table13_row791_v643c4;</td>
+            <td>@dec_table13_row791_v643c5;</td>
+            <td>@dec_table13_row791_v643c6;</td>
+            <td>@dec_table13_row791_v643c7;</td>
+            <td>@dec_table13_row791_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row791_v999c1;</td>
+            <td>@dec_table13_row791_v999c2;</td>
+            <td>@dec_table13_row791_v999c3;</td>
+            <td>@dec_table13_row791_v999c4;</td>
+            <td>@dec_table13_row791_v999c5;</td>
+            <td>@dec_table13_row791_v999c6;</td>
+            <td>@dec_table13_row791_v999c7;</td>
+            <td>@dec_table13_row791_v999c8;</td>
+        </tr>
+
+        <!-- Row 800 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Alte datorii curente – total"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">800</p>
+            </td>
+            <td>@dec_table13_row800_totalc1;</td>
+            <td>@dec_table13_row800_totalc2;</td>
+            <td>@dec_table13_row800_totalc3;</td>
+            <td>@dec_table13_row800_totalc4;</td>
+            <td>@dec_table13_row800_totalc5;</td>
+            <td>@dec_table13_row800_totalc6;</td>
+            <td>@dec_table13_row800_totalc7;</td>
+            <td>@dec_table13_row800_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row800_v978c1;</td>
+            <td>@dec_table13_row800_v978c2;</td>
+            <td>@dec_table13_row800_v978c3;</td>
+            <td>@dec_table13_row800_v978c4;</td>
+            <td>@dec_table13_row800_v978c5;</td>
+            <td>@dec_table13_row800_v978c6;</td>
+            <td>@dec_table13_row800_v978c7;</td>
+            <td>@dec_table13_row800_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row800_v840c1;</td>
+            <td>@dec_table13_row800_v840c2;</td>
+            <td>@dec_table13_row800_v840c3;</td>
+            <td>@dec_table13_row800_v840c4;</td>
+            <td>@dec_table13_row800_v840c5;</td>
+            <td>@dec_table13_row800_v840c6;</td>
+            <td>@dec_table13_row800_v840c7;</td>
+            <td>@dec_table13_row800_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row800_v642c1;</td>
+            <td>@dec_table13_row800_v642c2;</td>
+            <td>@dec_table13_row800_v642c3;</td>
+            <td>@dec_table13_row800_v642c4;</td>
+            <td>@dec_table13_row800_v642c5;</td>
+            <td>@dec_table13_row800_v642c6;</td>
+            <td>@dec_table13_row800_v642c7;</td>
+            <td>@dec_table13_row800_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row800_v643c1;</td>
+            <td>@dec_table13_row800_v643c2;</td>
+            <td>@dec_table13_row800_v643c3;</td>
+            <td>@dec_table13_row800_v643c4;</td>
+            <td>@dec_table13_row800_v643c5;</td>
+            <td>@dec_table13_row800_v643c6;</td>
+            <td>@dec_table13_row800_v643c7;</td>
+            <td>@dec_table13_row800_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row800_v999c1;</td>
+            <td>@dec_table13_row800_v999c2;</td>
+            <td>@dec_table13_row800_v999c3;</td>
+            <td>@dec_table13_row800_v999c4;</td>
+            <td>@dec_table13_row800_v999c5;</td>
+            <td>@dec_table13_row800_v999c6;</td>
+            <td>@dec_table13_row800_v999c7;</td>
+            <td>@dec_table13_row800_v999c8;</td>
+        </tr>
+
+        <!-- Row 801 -->
+        <tr>
+            <td>
+                <p class="webform-bold">["Din care aferente proprietarilor străini"]:</p>
+            </td>
+            <td>
+                <p align="center" class="webform-bold">801</p>
+            </td>
+            <td>@dec_table13_row801_totalc1;</td>
+            <td>@dec_table13_row801_totalc2;</td>
+            <td>@dec_table13_row801_totalc3;</td>
+            <td>@dec_table13_row801_totalc4;</td>
+            <td>@dec_table13_row801_totalc5;</td>
+            <td>@dec_table13_row801_totalc6;</td>
+            <td>@dec_table13_row801_totalc7;</td>
+            <td>@dec_table13_row801_totalc8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- EUR</p>
+            </td>
+            <td>
+                <p align="center">978</p>
+            </td>
+            <td>@dec_table13_row801_v978c1;</td>
+            <td>@dec_table13_row801_v978c2;</td>
+            <td>@dec_table13_row801_v978c3;</td>
+            <td>@dec_table13_row801_v978c4;</td>
+            <td>@dec_table13_row801_v978c5;</td>
+            <td>@dec_table13_row801_v978c6;</td>
+            <td>@dec_table13_row801_v978c7;</td>
+            <td>@dec_table13_row801_v978c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- USD</p>
+            </td>
+            <td>
+                <p align="center">840</p>
+            </td>
+            <td>@dec_table13_row801_v840c1;</td>
+            <td>@dec_table13_row801_v840c2;</td>
+            <td>@dec_table13_row801_v840c3;</td>
+            <td>@dec_table13_row801_v840c4;</td>
+            <td>@dec_table13_row801_v840c5;</td>
+            <td>@dec_table13_row801_v840c6;</td>
+            <td>@dec_table13_row801_v840c7;</td>
+            <td>@dec_table13_row801_v840c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RON</p>
+            </td>
+            <td>
+                <p align="center">642</p>
+            </td>
+            <td>@dec_table13_row801_v642c1;</td>
+            <td>@dec_table13_row801_v642c2;</td>
+            <td>@dec_table13_row801_v642c3;</td>
+            <td>@dec_table13_row801_v642c4;</td>
+            <td>@dec_table13_row801_v642c5;</td>
+            <td>@dec_table13_row801_v642c6;</td>
+            <td>@dec_table13_row801_v642c7;</td>
+            <td>@dec_table13_row801_v642c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- RUB</p>
+            </td>
+            <td>
+                <p align="center">643</p>
+            </td>
+            <td>@dec_table13_row801_v643c1;</td>
+            <td>@dec_table13_row801_v643c2;</td>
+            <td>@dec_table13_row801_v643c3;</td>
+            <td>@dec_table13_row801_v643c4;</td>
+            <td>@dec_table13_row801_v643c5;</td>
+            <td>@dec_table13_row801_v643c6;</td>
+            <td>@dec_table13_row801_v643c7;</td>
+            <td>@dec_table13_row801_v643c8;</td>
+        </tr>
+        <tr>
+            <td>
+                <p>- ["Alte valute"]</p>
+            </td>
+            <td>
+                <p align="center">999</p>
+            </td>
+            <td>@dec_table13_row801_v999c1;</td>
+            <td>@dec_table13_row801_v999c2;</td>
+            <td>@dec_table13_row801_v999c3;</td>
+            <td>@dec_table13_row801_v999c4;</td>
+            <td>@dec_table13_row801_v999c5;</td>
+            <td>@dec_table13_row801_v999c6;</td>
+            <td>@dec_table13_row801_v999c7;</td>
+            <td>@dec_table13_row801_v999c8;</td>
+        </tr>
+    </tbody>
+</table>
