@@ -1,0 +1,3 @@
+SELECT code, CONCAT(code, ', ', name) FROM taxonomy_term_data t JOIN classifier_11 c ON c.tid = t.tid ORDER BY code
+
+SELECT code, CONCAT(code, ', ', name) FROM taxonomy_term_data t JOIN classifier_vocabulary_11 c ON c.tid = t.tid ORDER BY name
