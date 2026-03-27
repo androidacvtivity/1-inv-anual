@@ -1,3 +1,9 @@
-SELECT code, CONCAT(code, ', ', name) FROM taxonomy_term_data t JOIN classifier_11 c ON c.tid = t.tid ORDER BY code
+B032326
 
-SELECT code, CONCAT(code, ', ', name) FROM taxonomy_term_data t JOIN classifier_vocabulary_11 c ON c.tid = t.tid ORDER BY name
+
+B032326	a25559b5	Commit to B032326 by dumitru.agatiev at 2026-03-23 10:52 - Modificare 1-inf.rev 1-TIC_v-34
+
+B032426	dd8113b2	Commit to B032426 by vitalie.bancu at 2026-03-24 17:24 - B032426 Modificare 1 INVEST ANUL 1-inv-anual_7.js 1 BE 1 - BE 716.js
+
+
+B032626
