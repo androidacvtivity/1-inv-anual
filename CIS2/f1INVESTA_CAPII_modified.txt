@@ -1,0 +1,127 @@
+var form = "";
+
+$(document).ready(function () {
+    form = $("#formDenShort").val();
+    f1INVESTA_CAPII();
+});
+
+$(function () {
+    $("input:not([type='button']):not([readonly]):not([disabled])").on("change", function () {
+        f1INVESTA_CAPII();
+    });
+});
+
+function f1INVESTA_CAPII() {
+
+    function el(idMd, rind, col) {
+        return $("#67_1140_" + idMd + "_" + rind + "_" + col);
+    }
+
+    function n($el) {
+        var value = $.trim($el.val());
+
+        if (value === "") {
+            return 0;
+        }
+
+        value = value.replace(/\s/g, "").replace(",", ".");
+
+        var result = parseFloat(value);
+        return isNaN(result) ? 0 : result;
+    }
+
+    function set1($el, value) {
+        $el.val(Number(value).toFixed(1));
+    }
+
+    function setReadonly($el) {
+        $el.prop("readonly", true);
+    }
+
+    function calcCol7(row) {
+        return n(el(row.idMd, row.rind, 2)) +
+            n(el(row.idMd, row.rind, 3)) -
+            n(el(row.idMd, row.rind, 4)) +
+            n(el(row.idMd, row.rind, 5)) +
+            n(el(row.idMd, row.rind, 6));
+    }
+
+    function calcGroup(totalRow, detailRows) {
+
+        // Total row: C2-C7 readonly
+        for (var col = 2; col <= 7; col++) {
+            setReadonly(el(totalRow.idMd, totalRow.rind, col));
+        }
+
+        // Detail rows: C7 readonly
+        detailRows.forEach(function (row) {
+            setReadonly(el(row.idMd, row.rind, 7));
+        });
+
+        // Total row C2-C6 = sum of detail rows C2-C6
+        for (var c = 2; c <= 6; c++) {
+            var sum = 0;
+
+            detailRows.forEach(function (row) {
+                sum += n(el(row.idMd, row.rind, c));
+            });
+
+            set1(el(totalRow.idMd, totalRow.rind, c), sum);
+        }
+
+        // Detail rows C7 = C2 + C3 - C4 + C5 + C6
+        detailRows.forEach(function (row) {
+            set1(el(row.idMd, row.rind, 7), calcCol7(row));
+        });
+
+        // Total row C7 = C2 + C3 - C4 + C5 + C6
+        set1(el(totalRow.idMd, totalRow.rind, 7), calcCol7(totalRow));
+    }
+
+    var total130 = { idMd: "62688", rind: "130" };
+    var rows130 = [
+        { idMd: "62691", rind: "130-01" },
+        { idMd: "62692", rind: "130-02" },
+        { idMd: "62693", rind: "130-03" },
+        { idMd: "62694", rind: "130-04" },
+        { idMd: "62695", rind: "130-05" },
+        { idMd: "62696", rind: "130-06" },
+        { idMd: "62697", rind: "130-07" },
+        { idMd: "62698", rind: "130-08" },
+        { idMd: "77291", rind: "130-09" },
+        { idMd: "77292", rind: "130-10" },
+
+        // Added rows
+        { idMd: "114198", rind: "130-11" },
+        { idMd: "114199", rind: "130-12" },
+        { idMd: "114200", rind: "130-13" },
+        { idMd: "114201", rind: "130-14" },
+        { idMd: "114202", rind: "130-15" },
+        { idMd: "114203", rind: "130-16" }
+    ];
+
+    var total140 = { idMd: "62699", rind: "140" };
+    var rows140 = [
+        { idMd: "62700", rind: "140-01" },
+        { idMd: "62701", rind: "140-02" },
+        { idMd: "62702", rind: "140-03" },
+        { idMd: "62703", rind: "140-04" },
+        { idMd: "62704", rind: "140-05" },
+        { idMd: "62705", rind: "140-06" },
+        { idMd: "62706", rind: "140-07" },
+        { idMd: "62707", rind: "140-08" },
+        { idMd: "77293", rind: "140-09" },
+        { idMd: "77294", rind: "140-10" },
+
+        // Added rows
+        { idMd: "114204", rind: "140-11" },
+        { idMd: "114205", rind: "140-12" },
+        { idMd: "114206", rind: "140-13" },
+        { idMd: "114207", rind: "140-14" },
+        { idMd: "114208", rind: "140-15" },
+        { idMd: "114209", rind: "140-16" }
+    ];
+
+    calcGroup(total130, rows130);
+    calcGroup(total140, rows140);
+}
